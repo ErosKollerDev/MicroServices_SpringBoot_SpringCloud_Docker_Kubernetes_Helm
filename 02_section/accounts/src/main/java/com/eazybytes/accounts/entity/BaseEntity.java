@@ -2,10 +2,14 @@ package com.eazybytes.accounts.entity;
 
 
 import jakarta.persistence.Column;
+import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedBy;
+import org.springframework.data.annotation.LastModifiedBy;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
@@ -15,12 +19,14 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @MappedSuperclass
+@EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
 
     @CreationTimestamp
     @Column(updatable = false)
     protected LocalDateTime createdAt;
 
+    @CreatedBy
     @Column(updatable = true, nullable = true)
     protected String createdBy;
 
@@ -28,6 +34,8 @@ public class BaseEntity {
     @Column(nullable = false, insertable = false)
     protected LocalDateTime updatedAt;
 
+    @LastModifiedBy
+    @Column(insertable = true)
     protected String updatedBy;
 
 }
