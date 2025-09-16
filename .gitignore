@@ -63,3 +63,4 @@ build/
 ### Mac OS ###
 .DS_Store
 02_section/
+excludedDir/
