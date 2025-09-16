@@ -8,7 +8,7 @@ FROM eclipse-temurin:21-alpine
 #MAINTAINER eazybytes.com
 LABEL maintainer="eazybytes.com"
 
-COPY target/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar
+COPY target/accounts-s04.jar accounts-s04.jar
 
 ENTRYPOINT ["java", "-jar", "accounts-0.0.1-SNAPSHOT.jar"]
 
