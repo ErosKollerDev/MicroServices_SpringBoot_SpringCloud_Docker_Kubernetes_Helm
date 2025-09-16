@@ -12,7 +12,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(info = @Info(title = "Loans API", version = "1.0.0", contact =
 @Contact(name = "Eros Koller", email = "eroskoller@gmail.com", url = "https://github.com/ErosKollerDev"),
-        license = @License(name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0.html")
+license = @License(name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0.html"
+,identifier = "Eros")
 
 ), externalDocs = @io.swagger.v3.oas.annotations.ExternalDocumentation(
         description = "MicroServices",

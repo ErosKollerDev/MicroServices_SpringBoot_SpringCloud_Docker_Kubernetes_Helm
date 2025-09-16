@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/audit/AuditAwareImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants/CardsConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/exceptions/CardAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/exceptions/ResourceNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/service/impl/CardsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/constants/LoansConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/repository/LoansRepository.java" afterDir="false" />
+    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/CardsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/dto/CardsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/dto/CardsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/repository/CardsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/repository/CardsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/service/CardsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/service/ICardsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/LoansApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/dto/LoansDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/dto/LoansDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/service/ILoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/service/ILoansService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/service/impl/LoansService.java" beforeDir="false" afterPath="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/service/impl/LoansService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,40 +52,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.cards [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cards [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/02_section/cards/src/main/java/com/eazybytes/cards/constants&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.cards [clean].executor": "Run",
+    "Maven.cards [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/02_section/cards/src/main/java/com/eazybytes/cards/constants",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants" />
@@ -199,11 +181,35 @@
       <workItem from="1757803729178" duration="26000" />
       <workItem from="1757882928276" duration="622000" />
       <workItem from="1757972159254" duration="5124000" />
-      <workItem from="1758024477323" duration="2177000" />
+      <workItem from="1758024477323" duration="3838000" />
     </task>
+    <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <option name="closed" value="true" />
+      <created>1758027865033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758027865033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
   </component>
 </project>
