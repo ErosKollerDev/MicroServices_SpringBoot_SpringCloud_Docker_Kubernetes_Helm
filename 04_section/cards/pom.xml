@@ -10,9 +10,9 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>cards</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
     <name>cards</name>
+    <version>s04</version>
+    <packaging>jar</packaging>
     <description>MicroService 4 Cards</description>
     <url/>
     <licenses>
@@ -30,6 +30,7 @@
     <properties>
         <java.version>21</java.version>
         <openapi.version>2.8.13</openapi.version>
+        <jib.version>3.4.1</jib.version>
     </properties>
     <dependencies>
         <dependency>
@@ -80,6 +81,21 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>${jib.version}</version>
+                <configuration>
+                    <to>
+                        <image>eroskoller/${project.artifactId}:${project.version}</image>
+                    </to>
+                    <from>
+                        <image>gcr.io/distroless/java21-debian12</image>
+                    </from>
+
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
