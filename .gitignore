@@ -62,6 +62,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-
-### Project ###
-/02_section/*
+02_section/
