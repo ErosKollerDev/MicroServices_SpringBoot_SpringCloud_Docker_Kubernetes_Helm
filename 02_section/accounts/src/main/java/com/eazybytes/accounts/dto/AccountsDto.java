@@ -9,7 +9,7 @@ import lombok.Data;
 public class AccountsDto {
 
     @NotEmpty(message = "Account Number is mandatory")
-    @Pattern(regexp = "(^$|[0-9]{10})", message = "Please provide valid account number")
+    @Pattern(regexp = "(^$|[0-9]{11})", message = "Please provide valid account number")
     private Long accountNumber;
     @NotEmpty(message = "Account Type is mandatory")
     private String accountType;
