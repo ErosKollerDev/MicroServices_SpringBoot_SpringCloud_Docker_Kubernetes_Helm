@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change afterPath="$PROJECT_DIR$/06_section/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application_prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application_qa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/cards/src/main/java/com/eazybytes/cards/dto/CardsContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/cards/src/main/resources/application_prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/cards/src/main/resources/application_qa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/loans/src/main/java/com/eazybytes/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/loans/src/main/resources/application_prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/loans/src/main/resources/application_qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_section/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_section/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/cards/src/main/java/com/eazybytes/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/cards/src/main/java/com/eazybytes/cards/CardsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/cards/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/loans/src/main/java/com/eazybytes/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/loans/src/main/java/com/eazybytes/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +35,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -78,8 +93,8 @@
     "Spring Boot.04_AccountsApplication.executor": "Run",
     "Spring Boot.04_CardsApplication.executor": "Run",
     "Spring Boot.04_LoansApplication.executor": "Run",
-    "Spring Boot.06_AccountsApplication.executor": "Run",
-    "Spring Boot.06_CardsApplication.executor": "Run",
+    "Spring Boot.06_AccountsApplication.executor": "Debug",
+    "Spring Boot.06_CardsApplication.executor": "Debug",
     "Spring Boot.06_LoansApplication.executor": "Run",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
@@ -88,7 +103,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section/loans/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,11 +120,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06_section/loans/src/main/resources" />
+      <recent name="$PROJECT_DIR$/06_section/cards/src/main/resources" />
+      <recent name="$PROJECT_DIR$/06_section/accounts/src/main/resources" />
       <recent name="$PROJECT_DIR$/06_section" />
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants" />
-      <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/audit" />
-      <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/exceptions" />
-      <recent name="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/constants" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.eazybytes.cards.service.impl" />
@@ -144,9 +159,14 @@
   </component>
   <component name="RunManager" selected="Spring Boot.06_LoansApplication">
     <configuration name="06_AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="qa" />
+      </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
+      <option name="PROGRAM_PARAMETERS" value="--build.version=&quot;1.2&quot;" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.accounts.AccountsApplication" />
+      <option name="VM_PARAMETERS" value="-Dbuild.version=&quot;1.1.0&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,7 +226,7 @@
       <workItem from="1758024477323" duration="6808000" />
       <workItem from="1758032927468" duration="75000" />
       <workItem from="1758033702173" duration="4876000" />
-      <workItem from="1758111669361" duration="6037000" />
+      <workItem from="1758111669361" duration="10148000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />

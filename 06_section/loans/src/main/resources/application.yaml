@@ -3,7 +3,13 @@ server:
 
 spring:
   application.name: loans
-#  devtools:
+  config:
+    import:
+      - application_qa.yml
+      - application_prod.yml
+  profiles:
+    active: "${SPRING_PROFILES_ACTIVE:qa}"
+  #  devtools:
 #    restart:
 #      trigger-file: .reloadtrigger
   h2:
@@ -23,5 +29,18 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Developer Loans Microservice"
+  contactDetails:
+    name: "Eros Koller"
+    email: "eroskoller@gmail.com"
+  onCallSupport:
+    - (+55) 11 99999-9999
+    - (+55) 11 88888-8888
 
 

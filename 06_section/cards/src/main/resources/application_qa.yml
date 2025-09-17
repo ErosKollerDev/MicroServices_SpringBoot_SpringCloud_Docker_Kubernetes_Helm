@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome QA to Cards Microservice"
+  contactDetails:
+    name: "Eros Koller"
+    email: "eroskoller@gmail.com"
+  onCallSupport:
+    - (+55) 11 99999-9999
+    - (+55) 11 88888-8888

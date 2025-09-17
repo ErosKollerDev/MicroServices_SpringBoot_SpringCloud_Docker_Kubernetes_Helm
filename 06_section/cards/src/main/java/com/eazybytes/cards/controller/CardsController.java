@@ -2,6 +2,7 @@ package com.eazybytes.cards.controller;
 
 
 import com.eazybytes.cards.constants.CardsConstants;
+import com.eazybytes.cards.dto.CardsContactInfoDto;
 import com.eazybytes.cards.dto.CardsDto;
 import com.eazybytes.cards.dto.ErrorResponseDto;
 import com.eazybytes.cards.dto.ResponseDto;
@@ -14,7 +15,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -27,9 +30,16 @@ import org.springframework.web.bind.annotation.*;
 )
 @RestController
 @RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Validated
 public class CardsController {
+
+    @Value("${build.version}")
+    private String buildVersion;
+
+    private Environment environment;
+
+    private final CardsContactInfoDto cardsContactInfDto;
 
     private ICardsService iCardsService;
 
@@ -156,6 +166,85 @@ public class CardsController {
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(CardsConstants.STATUS_417, CardsConstants.MESSAGE_417_DELETE));
         }
+    }
+
+
+
+    @Operation(
+            summary = "Fetch API version",
+            description = "REST API to fetch API Microservice Version"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping(value = "/build-info", produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> getBuildVersion() {
+        ResponseEntity<String> responseEntity = ResponseEntity.ok(String.format("Build Version: %s", this.buildVersion));
+        return responseEntity;
+    }
+
+    @Operation(
+            summary = "Fetch API version",
+            description = "REST API to fetch API Microservice Version"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping(value = "/java-version", produces = MediaType.TEXT_PLAIN_VALUE)
+    public ResponseEntity<String> getJavaVersion() {
+        ResponseEntity<String> responseEntity = ResponseEntity.ok(
+                String.format(String.format("Java Version: %s, Java Vendor: %s, Java Home: %s, Maven Home: %s",
+                        this.environment.getProperty("java.version"),
+                        this.environment.getProperty("java.vendor"),
+                        this.environment.getProperty("java.home"),
+                        this.environment.getProperty("maven.home"))));
+        return responseEntity;
+    }
+
+
+    @Operation(
+            summary = "Fetch API Contact Info",
+            description = "Contact Info for support."
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+                            schema = @Schema(implementation = ErrorResponseDto.class)
+                    )
+            )
+    }
+    )
+    @GetMapping(value = "/contact-info")
+    public ResponseEntity<CardsContactInfoDto> getContactDetails() {
+        return ResponseEntity.ok(this.cardsContactInfDto);
     }
 
 }

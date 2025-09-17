@@ -3,6 +3,13 @@ server:
 
 spring:
   application.name: accounts
+  config:
+    import:
+      - application_qa.yml
+      - application_prod.yml
+  profiles:
+    active:
+      - "${SPRING_PROFILES_ACTIVE:qa}"
   devtools:
     restart:
       trigger-file: .reloadtrigger
@@ -24,12 +31,11 @@ spring:
       hibernate:
         format_sql: true
 
-
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
-  message: "Welcome to Accounts Microservice"
+  message: "Welcome to Accounts Developer Mode Microservice"
   contactDetails:
     name: "Eros Koller"
     email: "eroskoller@gmail.com"
