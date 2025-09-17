@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06_section/docker-compose-microservices/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/docker-compose-microservices/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_section/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section/loans",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,11 +101,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/06_section" />
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants" />
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/audit" />
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/exceptions" />
       <recent name="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/constants" />
-      <recent name="$PROJECT_DIR$/02_section/loans/src/main/java/com/eazybytes/loans/exceptions" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.eazybytes.cards.service.impl" />
@@ -204,7 +202,7 @@
       <workItem from="1758024477323" duration="6808000" />
       <workItem from="1758032927468" duration="75000" />
       <workItem from="1758033702173" duration="4876000" />
-      <workItem from="1758111669361" duration="1560000" />
+      <workItem from="1758111669361" duration="1640000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
