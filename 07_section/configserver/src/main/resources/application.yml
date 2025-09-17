@@ -11,3 +11,4 @@ spring:
       server:
         native:
           search-locations: classpath:/config
+#          search-locations: file:///home//eros//Projects//Learning//SpringBoot//MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm//config-profiles

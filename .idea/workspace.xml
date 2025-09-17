@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts-qa.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards-qa.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans-prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans-qa.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +223,7 @@
       <workItem from="1758033702173" duration="4876000" />
       <workItem from="1758111669361" duration="10686000" />
       <workItem from="1758128204265" duration="595000" />
-      <workItem from="1758132653074" duration="4449000" />
+      <workItem from="1758132653074" duration="5476000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
