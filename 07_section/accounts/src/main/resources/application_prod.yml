@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Prod Accounts Microservice"
+  contactDetails:
+    name: "Eros Koller"
+    email: "eroskoller@gmail.com"
+  onCallSupport:
+    - (+55) 11 99999-9999
+    - (+55) 11 88888-8888

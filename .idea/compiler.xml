@@ -3,22 +3,23 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for loans" enabled="true">
+      <profile name="Annotation profile for configserver" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="loans" />
-        <module name="cards" />
-        <module name="accounts" />
+        <module name="configserver" />
+        <module name="cards (1)" />
+        <module name="loans (1)" />
+        <module name="accounts (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="accounts (1)" target="21" />
-      <module name="cards (1)" target="21" />
-      <module name="loans (1)" target="21" />
+      <module name="accounts" target="21" />
+      <module name="cards" target="21" />
+      <module name="loans" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +28,7 @@
       <module name="accounts (1)" options="-parameters" />
       <module name="cards" options="-parameters" />
       <module name="cards (1)" options="-parameters" />
+      <module name="configserver" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="loans (1)" options="-parameters" />
     </option>
