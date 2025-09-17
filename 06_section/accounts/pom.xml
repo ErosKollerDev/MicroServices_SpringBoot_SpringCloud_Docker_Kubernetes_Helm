@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.eazybytes</groupId>
 	<artifactId>accounts</artifactId>
-	<version>s04</version>
+	<version>s06</version>
     <packaging>jar</packaging>
 	<name>accounts</name>
 	<description>MicroService 4 Accounts</description>

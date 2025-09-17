@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
+    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/loans/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +82,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/04_section/loans",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section/loans",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
