@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.eazybytes</groupId>
 	<artifactId>configserver</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>s07</version>
 	<name>configserver</name>
 	<description>MicroService to hold configurations for profiles, environments vars</description>
 	<url/>
@@ -29,6 +29,7 @@
 	<properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2025.0.0</spring-cloud.version>
+        <jib.version>3.4.1</jib.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -89,6 +90,20 @@
 					</excludes>
 				</configuration>
 			</plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>${jib.version}</version>
+                <configuration>
+                    <to>
+                        <image>eroskoller/${project.artifactId}:${project.version}</image>
+                    </to>
+                    <from>
+                        <image>gcr.io/distroless/java21-debian12</image>
+                    </from>
+
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
 

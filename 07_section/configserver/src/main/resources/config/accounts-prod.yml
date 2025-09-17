@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: qa
-
 build:
-  version: "2.0"
+  version: "1.0"
 
-cards:
-  message: "Welcome QA to Loans Microservice"
+accounts:
+  message: "Welcome to Prod Accounts Microservice"
   contactDetails:
     name: "Eros Koller"
     email: "eroskoller@gmail.com"

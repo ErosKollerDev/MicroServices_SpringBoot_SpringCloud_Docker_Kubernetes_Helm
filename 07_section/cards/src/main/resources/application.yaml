@@ -2,14 +2,12 @@ server:
   port: 9000
 
 spring:
-  config:
-    import:
-      - application_qa.yml
-      - application_prod.yml
+  application:
+    name: cards
   profiles:
-    active:
-      - "${SPRING_PROFILES_ACTIVE:qa}"
-  application.name: cads
+    active: "${SPRING_PROFILES_ACTIVE:qa}"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
   #  devtools:
   #    restart:
   #      trigger-file: .reloadtrigger
@@ -30,18 +28,5 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-
-build:
-  version: "3.0"
-
-cards:
-  message: "Welcome to Cards Developer Mode Microservice"
-  contactDetails:
-    name: "Eros Koller"
-    email: "eroskoller@gmail.com"
-  onCallSupport:
-    - (+55) 11 99999-9999
-    - (+55) 11 88888-8888
 
 

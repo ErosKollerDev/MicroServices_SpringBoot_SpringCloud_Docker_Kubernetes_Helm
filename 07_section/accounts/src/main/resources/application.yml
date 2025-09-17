@@ -2,17 +2,16 @@ server:
   port: 8080
 
 spring:
-  application.name: accounts
-  config:
-    import:
-      - application_qa.yml
-      - application_prod.yml
+  application:
+   name: accounts
   profiles:
-    active:
-      - "${SPRING_PROFILES_ACTIVE:qa}"
-  devtools:
-    restart:
-      trigger-file: .reloadtrigger
+    active: "${SPRING_PROFILES_ACTIVE:qa}"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+#  devtools:
+#    restart:
+#      trigger-file: .reloadtrigger
   h2:
     console:
       enabled: true
@@ -30,15 +29,3 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
-build:
-  version: "3.0"
-
-accounts:
-  message: "Welcome to Accounts Developer Mode Microservice"
-  contactDetails:
-    name: "Eros Koller"
-    email: "eroskoller@gmail.com"
-  onCallSupport:
-    - (+55) 11 99999-9999
-    - (+55) 11 88888-8888

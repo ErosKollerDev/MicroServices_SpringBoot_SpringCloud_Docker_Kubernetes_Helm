@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/accounts-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/cards-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application_prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application_qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/config/loans-qa.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +79,10 @@
     "Maven.accounts [install].executor": "Run",
     "Maven.cards [clean].executor": "Run",
     "Maven.cards [install].executor": "Run",
+    "Maven.configserver [clean].executor": "Run",
+    "Maven.configserver [install].executor": "Run",
+    "Maven.loans [clean].executor": "Run",
+    "Maven.loans [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -82,6 +100,10 @@
     "Spring Boot.06_AccountsApplication.executor": "Debug",
     "Spring Boot.06_CardsApplication.executor": "Debug",
     "Spring Boot.06_LoansApplication.executor": "Debug",
+    "Spring Boot.07_AccountsApplication.executor": "Debug",
+    "Spring Boot.07_CardsApplication.executor": "Run",
+    "Spring Boot.07_ConfigserverApplication.executor": "Run",
+    "Spring Boot.07_LoansApplication.executor": "Run",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -89,7 +111,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/07_section/configserver",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/07_section/configserver/src/main/resources/config",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,11 +128,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/07_section/configserver/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/06_section/loans/src/main/resources" />
       <recent name="$PROJECT_DIR$/06_section/cards/src/main/resources" />
       <recent name="$PROJECT_DIR$/06_section/accounts/src/main/resources" />
       <recent name="$PROJECT_DIR$/06_section" />
-      <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.eazybytes.cards.service.impl" />
@@ -129,8 +151,22 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="07_AccountsApplication" value="STOPPED" />
+              <entry key="07_CardsApplication" value="STOPPED" />
+              <entry key="07_ConfigserverApplication" value="STOPPED" />
+              <entry key="07_LoansApplication" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.07_LoansApplication">
+  <component name="RunManager" selected="Spring Boot.07_ConfigserverApplication">
     <configuration name="07_AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts (1)" />
@@ -147,6 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="07_ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.configserver.ConfigserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="07_LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="loans (1)" />
@@ -155,15 +198,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="configserver" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.configserver.ConfigserverApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Spring Boot.ConfigserverApplication" />
+      <item itemvalue="Spring Boot.07_ConfigserverApplication" />
       <item itemvalue="Spring Boot.07_AccountsApplication" />
       <item itemvalue="Spring Boot.07_CardsApplication" />
       <item itemvalue="Spring Boot.07_LoansApplication" />
@@ -204,7 +240,7 @@
       <workItem from="1758033702173" duration="4876000" />
       <workItem from="1758111669361" duration="10686000" />
       <workItem from="1758128204265" duration="595000" />
-      <workItem from="1758132653074" duration="439000" />
+      <workItem from="1758132653074" duration="4449000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />

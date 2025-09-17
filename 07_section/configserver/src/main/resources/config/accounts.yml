@@ -1,14 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: prod
-
-
 build:
-  version: "1.0"
+  version: "3.0"
 
 accounts:
-  message: "Welcome to Prod Accounts Microservice"
+  message: "Welcome to Accounts Developer Mode Microservice"
   contactDetails:
     name: "Eros Koller"
     email: "eroskoller@gmail.com"
