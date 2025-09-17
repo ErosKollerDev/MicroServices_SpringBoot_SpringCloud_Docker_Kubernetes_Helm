@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change afterPath="$PROJECT_DIR$/06_section/docker-compose-microservices/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06_section/docker-compose-microservices/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/06_section/docker-compose-microservices/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,51 +55,52 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.accounts [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cards [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.cards [install].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.02_AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.02_CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.04_AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.04_CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.04_LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.06_AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.06_CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.06_LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AccountsApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section/loans&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.2139219&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.36727273&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Colors&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [spring-boot:build-image].executor": "Run",
+    "Maven.accounts [clean].executor": "Run",
+    "Maven.accounts [install].executor": "Run",
+    "Maven.cards [clean].executor": "Run",
+    "Maven.cards [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.02_AccountsApplication.executor": "Run",
+    "Spring Boot.02_CardsApplication.executor": "Run",
+    "Spring Boot.04_AccountsApplication.executor": "Run",
+    "Spring Boot.04_CardsApplication.executor": "Run",
+    "Spring Boot.04_LoansApplication.executor": "Run",
+    "Spring Boot.06_AccountsApplication.executor": "Run",
+    "Spring Boot.06_CardsApplication.executor": "Run",
+    "Spring Boot.06_LoansApplication.executor": "Run",
+    "Spring Boot.AccountsApplication (1).executor": "Run",
+    "Spring Boot.AccountsApplication.executor": "Run",
+    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.LoansApplication.executor": "Run",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/06_section/loans",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.2139219",
+    "project.structure.side.proportion": "0.36727273",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/02_section/cards/src/main/java/com/eazybytes/cards/constants" />
@@ -203,7 +204,7 @@
       <workItem from="1758024477323" duration="6808000" />
       <workItem from="1758032927468" duration="75000" />
       <workItem from="1758033702173" duration="4876000" />
-      <workItem from="1758111669361" duration="774000" />
+      <workItem from="1758111669361" duration="1560000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />

@@ -1,40 +1,46 @@
 # Build Docker Images
 
-``
+```shell
+ 
  docker build -t accounts .
  docker build . -t eroskoller/accounts:s04
-``
+```
 
 # Run Docker Images
-``
-docker run --name accounts-s04 -d -p 8080:8080 eroskoller/accounts:s04
-``
+```shell
+
+ docker run --name accounts-s04 -d -p 8080:8080 eroskoller/accounts:s04
+```
 
 # Stop Docker Images
-``
-docker stop accounts-s04
-``
+```shell
+ 
+ docker stop accounts-s04
+```
 # Remove Docker Images
-``
-docker rmi accounts-s04
-``
-# Remove Docker Containers
-``
-docker rm accounts-s04
-``
-# Push Docker Images
-``
-docker push eroskoller/accounts:s04
-``
-# Pull Docker Images
-``
-docker pull eroskoller/accounts:s04
-``
+```shell
 
-#Build with maven Buildpacks
-## Prepare pom.xml for buildpacks
+ docker rmi accounts-s04
+```
+# Remove Docker Containers
+```shell 
+ docker rm accounts-s04
+```
+# Push Docker Images
+```shell
+
+ docker push eroskoller/accounts:s04
+```
+# Pull Docker Images
+```shell
+
+ docker pull eroskoller/accounts:s04
+```
+
+# Build with Maven Buildpacks
+## Prepare pom.xml for Buildpacks
 **_Ex_**
-``
+```xml
 <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -42,32 +48,36 @@ docker pull eroskoller/accounts:s04
                     <image>
                         <name>eroskoller/${project.artifactId}:${project.version}</name>
                     </image>
-``
-# Build with buildpacks
-``
+```
+## Build with buildpacks
+```shell
+ 
     mvn spring-boot:build-image
-``
+```
 
-#Build with Google Jib
+# Build with Google Jib
 
 ## Maven Plugin
-``
+
+```xml 
+
 <plugin>
-        <groupId>com.google.cloud.tools</groupId>
-        <artifactId>jib-maven-plugin</artifactId>
-        <version>${jib.version}</version>
-        <configuration>
-                <to>
-                    <image>eroskoller/${project.artifactId}:${project.version}</image>
-                </to>
-                <from>
-                    <image>gcr.io/distroless/java21-debian12</image>
-                </from>
+    <groupId>com.google.cloud.tools</groupId>
+    <artifactId>jib-maven-plugin</artifactId>
+    <version>${jib.version}</version>
+    <configuration>
+        <to>
+            <image>eroskoller/${project.artifactId}:${project.version}</image>
+        </to>
+        <from>
+            <image>gcr.io/distroless/java21-debian12</image>
+        </from>
     </configuration>
- </plugin>
-``
+</plugin>
+```
+
 ## Jib CLI build command
-``
+```shell
     mvn compile jib:dockerBuild
-``
+```
 

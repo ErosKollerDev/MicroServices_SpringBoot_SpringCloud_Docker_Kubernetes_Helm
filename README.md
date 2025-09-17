@@ -6,3 +6,95 @@ Name is self explain it self MicroServices_SpringBoot_SpringCloud_Docker_Kuberne
 ## DatatransferObject reference
 
 [Data Transfer Object Pattern](https://martinfowler.com/eaaCatalog/dataTransferObject.html)
+
+
+
+
+
+
+# Convenient Commands
+
+
+# Build Docker Images
+
+```shell
+ 
+ docker build -t accounts .
+ docker build . -t eroskoller/accounts:s04
+```
+
+# Run Docker Images
+```shell
+
+ docker run --name accounts-s04 -d -p 8080:8080 eroskoller/accounts:s04
+```
+
+# Stop Docker Images
+```shell
+ 
+ docker stop accounts-s04
+```
+# Remove Docker Images
+```shell
+
+ docker rmi accounts-s04
+```
+# Remove Docker Containers
+```shell 
+ docker rm accounts-s04
+```
+# Push Docker Images
+```shell
+
+ docker push eroskoller/accounts:s04
+```
+# Pull Docker Images
+```shell
+
+ docker pull eroskoller/accounts:s04
+```
+
+# Build with Maven Buildpacks
+## Prepare pom.xml for Buildpacks
+**_Ex_**
+```xml
+<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>eroskoller/${project.artifactId}:${project.version}</name>
+                    </image>
+```
+## Build with buildpacks
+```shell
+ 
+    mvn spring-boot:build-image
+```
+
+# Build with Google Jib
+
+## Maven Plugin
+
+```xml 
+
+<plugin>
+    <groupId>com.google.cloud.tools</groupId>
+    <artifactId>jib-maven-plugin</artifactId>
+    <version>${jib.version}</version>
+    <configuration>
+        <to>
+            <image>eroskoller/${project.artifactId}:${project.version}</image>
+        </to>
+        <from>
+            <image>gcr.io/distroless/java21-debian12</image>
+        </from>
+    </configuration>
+</plugin>
+```
+
+## Jib CLI build command
+```shell
+    mvn compile jib:dockerBuild
+```
+
