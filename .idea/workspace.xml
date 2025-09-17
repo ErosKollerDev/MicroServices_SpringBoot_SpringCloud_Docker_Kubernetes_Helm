@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change afterPath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/java/com/eazybytes/accounts/dto/AccountsContactInfDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/dto/CardsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/dto/CardsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/configserver.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/java/com/eazybytes/loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/java/com/eazybytes/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/docker-compose-microservices/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/docker-compose-microservices/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,8 +96,8 @@
     "Spring Boot.06_LoansApplication.executor": "Debug",
     "Spring Boot.07_AccountsApplication.executor": "Run",
     "Spring Boot.07_CardsApplication.executor": "Run",
-    "Spring Boot.07_ConfigserverApplication.executor": "Debug",
-    "Spring Boot.07_LoansApplication.executor": "Run",
+    "Spring Boot.07_ConfigserverApplication.executor": "Run",
+    "Spring Boot.07_LoansApplication.executor": "Debug",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -118,6 +120,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/07_section/configserver/src/main/resources/config" />
@@ -150,7 +155,7 @@
             <map>
               <entry key="07_AccountsApplication" value="STOPPED" />
               <entry key="07_CardsApplication" value="STOPPED" />
-              <entry key="07_ConfigserverApplication" value="STOPPED" />
+              <entry key="07_ConfigserverApplication" value="FAILED" />
               <entry key="07_LoansApplication" value="STOPPED" />
             </map>
           </value>
@@ -232,7 +237,8 @@
       <workItem from="1758033702173" duration="4876000" />
       <workItem from="1758111669361" duration="10686000" />
       <workItem from="1758128204265" duration="595000" />
-      <workItem from="1758132653074" duration="8577000" />
+      <workItem from="1758132653074" duration="8929000" />
+      <workItem from="1758147387665" duration="3687000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
