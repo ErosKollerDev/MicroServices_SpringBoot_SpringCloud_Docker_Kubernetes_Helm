@@ -2,7 +2,7 @@ package com.eazybytes.accounts.controller;
 
 
 import com.eazybytes.accounts.constants.AccountsConstants;
-import com.eazybytes.accounts.dto.AccountsContactInfDto;
+import com.eazybytes.accounts.dto.AccountsContactInfoDto;
 import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.dto.ErrorResponseDto;
 import com.eazybytes.accounts.dto.ResponseDto;
@@ -43,7 +43,7 @@ public class AccountsController {
 
     private final IAccountsService accountsService;
 
-    private final AccountsContactInfDto accountsContactInfDto;
+    private final AccountsContactInfoDto accountsContactInfoDto;
 
     @Operation(
             summary = "Create Account REST API",
@@ -236,8 +236,8 @@ public class AccountsController {
     }
     )
     @GetMapping(value = "/contact-info")
-    public ResponseEntity<AccountsContactInfDto> getContactDetails() {
-        return ResponseEntity.ok(this.accountsContactInfDto);
+    public ResponseEntity<AccountsContactInfoDto> getContactDetails() {
+        return ResponseEntity.ok(this.accountsContactInfoDto);
     }
 
 }

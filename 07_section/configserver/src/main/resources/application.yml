@@ -5,10 +5,19 @@ spring:
   application:
     name: configserver
   profiles:
-    active: native
+#    active: native
+    active: git
   cloud:
     config:
       server:
-        native:
-          search-locations: classpath:/config
+        git:
+          uri: https://github.com/ErosKollerDev/springboot-configserver-only-confiig-files.git
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+#        native:
+#          search-locations: classpath:/config
 #          search-locations: file:///home//eros//Projects//Learning//SpringBoot//MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm//config-profiles
+encrypt:
+  key: "${ENCRYPT_KEY:secretkey_1234567890_0987654321}"
