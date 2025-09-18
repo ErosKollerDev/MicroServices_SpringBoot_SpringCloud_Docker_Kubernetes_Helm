@@ -41,7 +41,7 @@ public class CardsController {
 
     private final CardsContactInfoDto cardsContactInfDto;
 
-    private ICardsService iCardsService;
+    private final ICardsService iCardsService;
 
     @Operation(
             summary = "Create Card REST API",

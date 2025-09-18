@@ -12,6 +12,7 @@
     <artifactId>cards</artifactId>
     <name>cards</name>
     <version>s06</version>
+
     <packaging>jar</packaging>
     <description>MicroService 4 Cards</description>
     <url/>

@@ -41,7 +41,7 @@ public class LoansController {
     private final Environment environment;
     private final LoansContactInfoDto loansContactInfoDto;
 
-    private ILoansService iLoansService;
+    private final ILoansService iLoansService;
 
     @Operation(
             summary = "Create Loan REST API",

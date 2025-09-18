@@ -5,18 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <change afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/default/common-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/prod/common-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/prod/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/qa/common-config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/qa/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/cards/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/configserver.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/configserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/docker-compose-microservices/commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/commands.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_section/docker-compose-microservices/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/docker-compose-microservices/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/docker-compose-microservices/default/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/java/com/eazybytes/loans/controller/LoansController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/07_section/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,9 +101,9 @@
     "Spring Boot.06_CardsApplication.executor": "Debug",
     "Spring Boot.06_LoansApplication.executor": "Debug",
     "Spring Boot.07_AccountsApplication.executor": "Run",
-    "Spring Boot.07_CardsApplication.executor": "Run",
+    "Spring Boot.07_CardsApplication.executor": "Debug",
     "Spring Boot.07_ConfigserverApplication.executor": "Run",
-    "Spring Boot.07_LoansApplication.executor": "Debug",
+    "Spring Boot.07_LoansApplication.executor": "Run",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -105,7 +111,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/07_section/configserver/src/main/resources/config",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/07_section/docker-compose-microservices/qa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,7 +121,7 @@
     "project.structure.proportion": "0.2139219",
     "project.structure.side.proportion": "0.36727273",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Colors",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -125,11 +131,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/qa" />
+      <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/prod" />
       <recent name="$PROJECT_DIR$/07_section/configserver/src/main/resources/config" />
       <recent name="$PROJECT_DIR$/06_section/loans/src/main/resources" />
       <recent name="$PROJECT_DIR$/06_section/cards/src/main/resources" />
-      <recent name="$PROJECT_DIR$/06_section/accounts/src/main/resources" />
-      <recent name="$PROJECT_DIR$/06_section" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/default" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.eazybytes.cards.service.impl" />
@@ -155,7 +164,7 @@
             <map>
               <entry key="07_AccountsApplication" value="STOPPED" />
               <entry key="07_CardsApplication" value="STOPPED" />
-              <entry key="07_ConfigserverApplication" value="FAILED" />
+              <entry key="07_ConfigserverApplication" value="STOPPED" />
               <entry key="07_LoansApplication" value="STOPPED" />
             </map>
           </value>
@@ -238,7 +247,8 @@
       <workItem from="1758111669361" duration="10686000" />
       <workItem from="1758128204265" duration="595000" />
       <workItem from="1758132653074" duration="8929000" />
-      <workItem from="1758147387665" duration="3687000" />
+      <workItem from="1758147387665" duration="5824000" />
+      <workItem from="1758194787547" duration="13881000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
@@ -268,6 +278,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
     <option name="LAST_COMMIT_MESSAGE" value="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
