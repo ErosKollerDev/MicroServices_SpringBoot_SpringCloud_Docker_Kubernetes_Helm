@@ -1,0 +1,47 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: configserver
+  profiles:
+#    active: native
+    active: git
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ErosKollerDev/springboot-configserver-only-confiig-files.git
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+#        native:
+#          search-locations: classpath:/config
+#          search-locations: file:///home//eros//Projects//Learning//SpringBoot//MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm//config-profiles
+
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+encrypt:
+  key: "${ENCRYPT_KEY:secretkey_1234567890_0987654321}"
