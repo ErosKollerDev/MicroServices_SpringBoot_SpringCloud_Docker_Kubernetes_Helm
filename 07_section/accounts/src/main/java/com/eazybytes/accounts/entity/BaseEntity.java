@@ -1,9 +1,7 @@
 package com.eazybytes.accounts.entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EntityListeners;
-import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -31,11 +29,13 @@ public class BaseEntity {
     protected String createdBy;
 
     @UpdateTimestamp
-    @Column(nullable = false, insertable = false)
+    @Column(nullable = false)
     protected LocalDateTime updatedAt;
 
     @LastModifiedBy
     @Column(insertable = true)
     protected String updatedBy;
+
+
 
 }

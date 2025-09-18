@@ -11,7 +11,7 @@
     <groupId>com.eazybytes</groupId>
     <artifactId>loans</artifactId>
     <name>loans</name>
-    <version>s06</version>
+    <version>s07</version>
 
     <packaging>jar</packaging>
     <description>MicroService 4 Loans</description>
@@ -63,7 +63,11 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

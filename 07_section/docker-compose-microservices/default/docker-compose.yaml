@@ -1,4 +1,21 @@
 services:
+  db:
+    container_name: postgres-ms
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=eazybank
+    ports:
+      - "5432:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
   rabbit:
     image: rabbitmq:4-management
     hostname: rabbitmq
@@ -36,7 +53,7 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "eroskoller/accounts:s06"
+    image: "eroskoller/accounts:s07"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -50,7 +67,7 @@ services:
       service: microservice-configserver-config
 
   loans:
-    image: "eroskoller/loans:s06"
+    image: "eroskoller/loans:s07"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -80,3 +97,7 @@ services:
 networks:
   eazybank:
     driver: "bridge"
+
+volumes:
+  db:
+    driver: local

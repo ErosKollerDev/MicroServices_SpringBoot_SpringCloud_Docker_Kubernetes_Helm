@@ -31,7 +31,7 @@ public class BaseEntity {
     protected String createdBy;
 
     @UpdateTimestamp
-    @Column(nullable = false, insertable = false)
+    @Column(nullable = false)
     protected LocalDateTime updatedAt;
 
     @LastModifiedBy
