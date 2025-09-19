@@ -16,6 +16,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -24,6 +25,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+@Slf4j
 @Tag(
         name = "CRUD REST APIs for Cards in EazyBank",
         description = "CRUD REST APIs in EazyBank to CREATE, UPDATE, FETCH AND DELETE card details"
@@ -63,7 +65,7 @@ public class CardsController {
     )
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createCard(@Valid @RequestParam
-                                                  @Pattern(regexp="(^$|[0-9]{11})",message = "Mobile number must be 10 digits")
+                                                  @Pattern(regexp = "(^$|[0-9]{11})", message = "Mobile number must be 10 digits")
                                                   String mobileNumber) {
         iCardsService.createCard(mobileNumber);
         return ResponseEntity
@@ -89,9 +91,12 @@ public class CardsController {
             )
     })
     @GetMapping("/fetch")
-    public ResponseEntity<CardsDto> fetchCardDetails(@RequestParam
-                                                     @Pattern(regexp="(^$|[0-9]{11})",message = "Mobile number must be 10 digits")
-                                                     String mobileNumber) {
+    public ResponseEntity<CardsDto> fetchCardDetails(
+            @RequestHeader(name = "eazybank-correlation-id") String correlationId,
+            @RequestParam
+            @Pattern(regexp = "(^$|[0-9]{11})", message = "Mobile number must be 10 digits")
+            String mobileNumber) {
+        log.debug("Correlation Id: {}", correlationId);
         CardsDto cardsDto = iCardsService.fetchCard(mobileNumber);
         return ResponseEntity.status(HttpStatus.OK).body(cardsDto);
     }
@@ -120,11 +125,11 @@ public class CardsController {
     @PutMapping("/update")
     public ResponseEntity<ResponseDto> updateCardDetails(@Valid @RequestBody CardsDto cardsDto) {
         boolean isUpdated = iCardsService.updateCard(cardsDto);
-        if(isUpdated) {
+        if (isUpdated) {
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(new ResponseDto(CardsConstants.STATUS_200, CardsConstants.MESSAGE_200));
-        }else{
+        } else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(CardsConstants.STATUS_417, CardsConstants.MESSAGE_417_UPDATE));
@@ -154,20 +159,19 @@ public class CardsController {
     })
     @DeleteMapping("/delete")
     public ResponseEntity<ResponseDto> deleteCardDetails(@RequestParam
-                                                         @Pattern(regexp="(^$|[0-9]{11})",message = "Mobile number must be 10 digits")
+                                                         @Pattern(regexp = "(^$|[0-9]{11})", message = "Mobile number must be 10 digits")
                                                          String mobileNumber) {
         boolean isDeleted = iCardsService.deleteCard(mobileNumber);
-        if(isDeleted) {
+        if (isDeleted) {
             return ResponseEntity
                     .status(HttpStatus.OK)
                     .body(new ResponseDto(CardsConstants.STATUS_200, CardsConstants.MESSAGE_200));
-        }else{
+        } else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
                     .body(new ResponseDto(CardsConstants.STATUS_417, CardsConstants.MESSAGE_417_DELETE));
         }
     }
-
 
 
     @Operation(

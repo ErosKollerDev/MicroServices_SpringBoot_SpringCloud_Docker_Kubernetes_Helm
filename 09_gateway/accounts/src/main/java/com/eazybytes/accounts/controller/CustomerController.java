@@ -9,14 +9,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+
+@Slf4j
 @Tag(
         name = "REST for CustomerDetails",
         description = "REST APIs in to fetch customer details"
@@ -31,10 +31,13 @@ public class CustomerController {
     private final CustomerServiceImpl customerServiceImpl;
 
     @GetMapping("/fetchCustomerDetails")
-    public ResponseEntity<CustomerDetailsDto> fetchCustomerDetails(@RequestParam
-                                                                   @Pattern(regexp = "(^$|[0-9]{11})", message = "Please provide valid mobile number")
-                                                                   String mobileNumber) {
-        CustomerDetailsDto customerDetailsDto = this.customerServiceImpl.fetchCustomerDetails(mobileNumber);
+    public ResponseEntity<CustomerDetailsDto> fetchCustomerDetails(
+            @RequestHeader(name = "eazybank-correlation-id") String correlationId,
+            @RequestParam
+            @Pattern(regexp = "(^$|[0-9]{11})", message = "Please provide valid mobile number")
+            String mobileNumber) {
+        log.info("Correlation Id: {}", correlationId);
+        CustomerDetailsDto customerDetailsDto = this.customerServiceImpl.fetchCustomerDetails(mobileNumber, correlationId);
         return ResponseEntity.ok(customerDetailsDto);
     }
 
