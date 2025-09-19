@@ -9,11 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver (1)" />
       </profile>
+      <profile name="Annotation profile for gatewayserver" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
+        </processorPath>
+        <module name="gatewayserver" />
+      </profile>
       <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="configserver" />
@@ -40,6 +50,7 @@
       <module name="configserver (1)" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eurekaserver (1)" options="-parameters" />
+      <module name="gatewayserver" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="loans (1)" options="-parameters" />
     </option>

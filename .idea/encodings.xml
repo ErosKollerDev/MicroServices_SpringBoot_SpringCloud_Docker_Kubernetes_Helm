@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/08_section_eureka/cards/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/08_section_eureka/configserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/08_section_eureka/eurekaserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/08_section_eureka/loans/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09_gateway/accounts/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09_gateway/cards/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09_gateway/configserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09_gateway/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09_gateway/gatewayserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09_gateway/loans/src/main/java" charset="UTF-8" />
   </component>
 </project>

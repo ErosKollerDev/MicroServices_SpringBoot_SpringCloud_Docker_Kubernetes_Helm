@@ -74,7 +74,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "eroskoller/accounts:s08"
+    image: "eroskoller/accounts:s08.1"
     container_name: accounts-ms
     ports:
       - "8080:8080"
