@@ -8,10 +8,12 @@ import io.swagger.v3.oas.annotations.info.License;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-@EnableConfigurationProperties({AccountsContactInfoDto.class})
 @SpringBootApplication
+@EnableFeignClients
+@EnableConfigurationProperties({AccountsContactInfoDto.class})
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(info = @Info(title = "Accounts API", version = "1.0.0", contact =
 @Contact(name = "Eros Koller", email = "eroskoller@gmail.com", url = "https://github.com/ErosKollerDev"),

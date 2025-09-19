@@ -9,9 +9,9 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-@Schema(name = "Customer",
-        description = "Schema to hold Customer information")
-public class CustomerDto {
+@Schema(name = "CustomerDetails",
+        description = "Schema to hold Customer, Accounts, Cards and Loans information")
+public class CustomerDetailsDto {
 
     @Schema(description = "Customer Id", example = "123456")
     private Long id;
@@ -31,6 +31,12 @@ public class CustomerDto {
     @Pattern(regexp = "(^$|[0-9]{11})", message = "Please provide valid mobile number")
     private String mobileNumber;
 
+    @Schema(description = "Accounts details of the Customer")
     private AccountsDto accountsDto;
 
+    @Schema(description = "Cards details of the Customer")
+    private CardsDto cardsDto;
+
+    @Schema(description = "Loans details of the Customer")
+    private LoansDto loansDto;
 }

@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/dto/CardsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDetailsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/dto/LoansDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/ICustomerDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/client/ICardsFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/client/ILoansFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/08_section_eureka/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/08_section_eureka/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/cards/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/cards/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/eurekaserver/src/main/java/com/eazybytes/eurekaserver/EurekaserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/eurekaserver/src/main/java/com/eazybytes/eurekaserver/EurekaserverApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/eurekaserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/default/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/prod/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/prod/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/prod/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/qa/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/qa/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/docker-compose-microservices/qa/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/08_section_eureka/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08_section_eureka/loans/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/08_section_eureka/loans/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,8 +109,15 @@
     "Spring Boot.07_CardsApplication.executor": "Run",
     "Spring Boot.07_ConfigserverApplication.executor": "Run",
     "Spring Boot.07_LoansApplication.executor": "Run",
-    "Spring Boot.08_AccountsApplication_Eureka.executor": "Debug",
+    "Spring Boot.08_AccountsApplication.executor": "Run",
+    "Spring Boot.08_AccountsApplication_Eureka.executor": "Run",
+    "Spring Boot.08_CardsApplication.executor": "Run",
     "Spring Boot.08_CardsApplication_Eureka.executor": "Debug",
+    "Spring Boot.08_ConfigserverApplication.executor": "Run",
+    "Spring Boot.08_ConfigserverApplication_Eureka.executor": "Run",
+    "Spring Boot.08_EurekaserverApplication.executor": "Run",
+    "Spring Boot.08_LoansApplication.executor": "Run",
+    "Spring Boot.08_LoansApplication_Eureka.executor": "Debug",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -140,9 +159,10 @@
       <recent name="com.eazybytes.cards.service.impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eazybytes.accounts.service.client" />
+      <recent name="com.eazybytes.accounts.dto" />
       <recent name="com.eazybytes.loans.entity" />
       <recent name="com.eazybytes.cards.entity" />
-      <recent name="com.eazybytes.accounts.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,15 +178,19 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="08_AccountsApplication_Eureka" value="STOPPED" />
+              <entry key="08_AccountsApplication" value="STOPPED" />
+              <entry key="08_CardsApplication" value="STOPPED" />
+              <entry key="08_ConfigserverApplication" value="STOPPED" />
+              <entry key="08_EurekaserverApplication" value="STOPPED" />
+              <entry key="08_LoansApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.08_EurekaserverApplication">
-    <configuration name="08_AccountsApplication_Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <component name="RunManager" selected="Spring Boot.08_LoansApplication">
+    <configuration name="08_AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.accounts.AccountsApplication" />
@@ -174,7 +198,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="08_CardsApplication_Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="08_CardsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="cards" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.cards.CardsApplication" />
@@ -182,7 +206,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="08_ConfigserverApplication_Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="08_ConfigserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="configserver (1)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.configserver.ConfigserverApplication" />
       <method v="2">
@@ -196,7 +220,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="08_LoansApplication_Eureka" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="08_LoansApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="loans" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.loans.LoansApplication" />
@@ -205,7 +229,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="default/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -219,10 +245,10 @@
     <list>
       <item itemvalue="Docker.default/docker-compose.yaml: Compose Deployment" />
       <item itemvalue="Spring Boot.08_EurekaserverApplication" />
-      <item itemvalue="Spring Boot.08_AccountsApplication_Eureka" />
-      <item itemvalue="Spring Boot.08_CardsApplication_Eureka" />
-      <item itemvalue="Spring Boot.08_ConfigserverApplication_Eureka" />
-      <item itemvalue="Spring Boot.08_LoansApplication_Eureka" />
+      <item itemvalue="Spring Boot.08_AccountsApplication" />
+      <item itemvalue="Spring Boot.08_CardsApplication" />
+      <item itemvalue="Spring Boot.08_ConfigserverApplication" />
+      <item itemvalue="Spring Boot.08_LoansApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -270,7 +296,8 @@
       <workItem from="1758194787547" duration="15358000" />
       <workItem from="1758217988817" duration="705000" />
       <workItem from="1758219301134" duration="4395000" />
-      <workItem from="1758230974288" duration="7189000" />
+      <workItem from="1758230974288" duration="7371000" />
+      <workItem from="1758271415655" duration="9484000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
@@ -308,6 +335,41 @@
           <url>file://$PROJECT_DIR$/07_section/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java</url>
           <line>64</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/08_section_eureka/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

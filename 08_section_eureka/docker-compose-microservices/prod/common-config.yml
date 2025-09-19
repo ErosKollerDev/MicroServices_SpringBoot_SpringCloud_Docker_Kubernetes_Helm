@@ -9,7 +9,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 700m
+          memory: 450m
     environment:
       SPRING_RABBITMQ_HOST: "rabbit"
 
@@ -20,3 +20,9 @@ services:
       SPRING_PROFILES_ACTIVE: prod
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
       POSTGRES_URI: jdbc:postgresql://db:5432/eazybank
+
+  microservice-eureka-config:
+    extends:
+      service: microservice-configserver-config
+    environment:
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eurekaserver:8070/eureka/
