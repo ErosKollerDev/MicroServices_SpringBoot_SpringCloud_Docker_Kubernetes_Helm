@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Prod Loans Microservice"
+  contactDetails:
+    name: "Eros Koller"
+    email: "eroskoller@gmail.com"
+  onCallSupport:
+    - (+55) 11 99999-9999
+    - (+55) 11 88888-8888

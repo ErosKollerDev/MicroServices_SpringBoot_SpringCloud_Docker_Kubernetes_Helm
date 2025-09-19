@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaserver" />
+        <module name="eurekaserver (1)" />
       </profile>
       <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -15,19 +15,19 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="configserver (1)" />
-        <module name="cards" />
-        <module name="accounts" />
-        <module name="loans" />
+        <module name="configserver" />
+        <module name="cards (1)" />
+        <module name="loans (1)" />
+        <module name="accounts (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="accounts (1)" target="21" />
-      <module name="cards (1)" target="21" />
-      <module name="configserver" target="21" />
-      <module name="loans (1)" target="21" />
+      <module name="accounts" target="21" />
+      <module name="cards" target="21" />
+      <module name="configserver (1)" target="21" />
+      <module name="eurekaserver" target="21" />
+      <module name="loans" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -39,6 +39,7 @@
       <module name="configserver" options="-parameters" />
       <module name="configserver (1)" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="eurekaserver (1)" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="loans (1)" options="-parameters" />
     </option>
