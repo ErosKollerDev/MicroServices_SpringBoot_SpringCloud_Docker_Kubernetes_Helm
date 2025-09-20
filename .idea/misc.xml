@@ -10,6 +10,12 @@
         <option value="$PROJECT_DIR$/10_circuit_breaker/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/10_circuit_breaker/gatewayserver/pom.xml" />
         <option value="$PROJECT_DIR$/10_circuit_breaker/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/11_Observability_Monitoring/loans/pom.xml" />
       </list>
     </option>
   </component>
