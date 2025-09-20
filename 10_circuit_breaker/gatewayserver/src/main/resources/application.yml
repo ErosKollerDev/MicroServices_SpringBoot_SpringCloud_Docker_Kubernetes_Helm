@@ -9,10 +9,19 @@ spring:
   devtools:
     restart:
       enabled: false
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 1s
+      connect-timeout: 1s
   cloud:
     gateway:
       server:
         webflux:
+          httpclient:
+            connect-timeout: 10000
+            response-timeout: 50s
           discovery:
             locator:
               enabled: true
@@ -69,3 +78,36 @@ logging:
     com:
       eazybytes:
         gatewayserver: DEBUG
+
+# resilience4j.circuitbreaker:
+#  configs:
+#    default: # accountsCircuitBreaker -> use the name of circuitBreak filter to be more specific
+#      slidingWindowSize: 10 # monitoring 10 requests
+#      permitted-number-of-calls-in-half-open-state: 2 # allow to request in half-open-state
+#      failure-rate-threshold: 50 # 50%
+#      wait-duration-in-open-state: 10000 # 10s to wait to move to half-open-state
+#      registerHealthIndicator: true
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+      # recommended additions to capture and publish events
+#      slidingWindowType: COUNT_BASED
+#      minimumNumberOfCalls: 5
+#      automaticTransitionFromOpenToHalfOpenEnabled: true
+#      eventConsumerBufferSize: 100
+      # count these exceptions as failures
+#      recordExceptions:
+#        - org.springframework.web.reactive.function.client.WebClientResponseException
+#        - java.io.IOException
+
+
+#resilience4j.timelimiter:
+#  configs:
+#    default:
+#      timeoutDuration: 5s
+#      cancelRunningFuture: true

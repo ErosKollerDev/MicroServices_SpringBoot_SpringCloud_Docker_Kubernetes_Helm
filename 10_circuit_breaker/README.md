@@ -28,6 +28,7 @@
 ```
 # Remove Docker Containers
 ```shell 
+
  docker rm accounts-s04
 ```
 # Push Docker Images
@@ -82,6 +83,7 @@
 
 ## Jib CLI build command
 ```shell
+
     mvn compile jib:dockerBuild
 ```
 

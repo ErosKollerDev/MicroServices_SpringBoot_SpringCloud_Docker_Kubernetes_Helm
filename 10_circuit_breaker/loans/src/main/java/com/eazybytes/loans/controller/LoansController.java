@@ -251,6 +251,8 @@ public class LoansController {
     )
     @GetMapping(value = "/contact-info")
     public ResponseEntity<LoansContactInfoDto> getContactDetails() {
+        log.debug("Testing retries -----> On url: /contact-info  || Contact Details: {}", this.loansContactInfoDto);
+//        throw new RuntimeException("Testing retries -----> On url: /contact-info");
         return ResponseEntity.ok(this.loansContactInfoDto);
     }
 

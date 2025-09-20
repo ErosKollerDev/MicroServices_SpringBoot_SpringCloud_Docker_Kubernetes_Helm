@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "cards")//, url = "http://localhost:8081"
+@FeignClient(name = "cards", fallback = CardsFallback.class)//, url = "http://localhost:8081"
 public interface ICardsFeignClient {
 
 //    @PostMapping("/api/create")
@@ -19,3 +19,7 @@ public interface ICardsFeignClient {
 
 
 }
+
+
+
+

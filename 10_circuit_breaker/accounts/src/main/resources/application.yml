@@ -31,7 +31,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
 management:
   endpoints:
     web:
@@ -74,3 +77,32 @@ logging:
     com:
       eazybytes:
         accounts: DEBUG
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+
+resilience4j.retry:
+  configs:
+    default:
+      maxAttempts: 3
+      waitDuration: 500
+      enableExponentialBackoff: true
+      exponentialBackoffMultiplier: 2
+      # Exceptions that should not trigger a retry attempt
+      ignoreExceptions:
+        - java.lang.NullPointerException
+      # Exceptions that should trigger a retry attempt
+      retryExceptions:
+        - java.util.concurrent.TimeoutException
+
+resilience4j.ratelimiter:
+  configs:
+    default:
+      timeoutDuration: 1000
+      limitRefreshPeriod: 500
+      limitForPeriod: 1
