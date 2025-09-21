@@ -7,7 +7,8 @@
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices/default/docker-grafana-premetheus-ngnix-dev.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices/prod/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices/prod/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices/qa/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices/qa/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -324,7 +325,7 @@
       <workItem from="1758410207807" duration="4691000" />
       <workItem from="1758457882592" duration="12665000" />
       <workItem from="1758472342092" duration="2119000" />
-      <workItem from="1758476945411" duration="1297000" />
+      <workItem from="1758476945411" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
