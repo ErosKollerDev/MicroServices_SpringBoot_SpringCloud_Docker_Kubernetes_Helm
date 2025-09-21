@@ -11,7 +11,7 @@
     <groupId>com.eazybytes</groupId>
     <artifactId>cards</artifactId>
     <name>cards</name>
-    <version>s10</version>
+    <version>s11</version>
 
     <packaging>jar</packaging>
     <description>MicroService 4 Cards</description>
@@ -94,6 +94,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -120,8 +124,9 @@
                         <image>eroskoller/${project.artifactId}:${project.version}</image>
                     </to>
                     <from>
+                        <image>eclipse-temurin:24-jre-alpine</image>
 <!--                        <image>gcr.io/distroless/java21-debian12</image>-->
-                        <image>eclipse-temurin:21-jre-alpine</image>
+<!--                        <image>eclipse-temurin:21-jre-alpine</image>-->
                     </from>
 
                 </configuration>

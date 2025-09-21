@@ -19,13 +19,13 @@ spring:
     gateway:
       server:
         webflux:
-          httpclient:
-            connect-timeout: 10000
-            response-timeout: 50s
           discovery:
             locator:
               enabled: true
               lower-case-service-id: true
+          httpclient:
+            connect-timeout: 1000
+            response-timeout: 5s
 
   #      routes:
   #        - id: per_route_timeouts
@@ -64,6 +64,9 @@ management:
   info:
     env:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 info:
   app:

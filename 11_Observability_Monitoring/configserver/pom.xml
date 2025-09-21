@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>configserver</artifactId>
-    <version>s10</version>
+    <version>s11</version>
     <name>configserver</name>
     <description>MicroService to hold configurations for profiles, environments vars</description>
     <url/>
@@ -58,6 +58,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-monitor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>
@@ -107,7 +111,8 @@
                         <image>eroskoller/${project.artifactId}:${project.version}</image>
                     </to>
                     <from>
-                        <image>eclipse-temurin:21-jre-alpine</image>
+                        <image>eclipse-temurin:24-jre-alpine</image>
+<!--                        <image>eclipse-temurin:21-jre-alpine</image>-->
                     </from>
 
                 </configuration>

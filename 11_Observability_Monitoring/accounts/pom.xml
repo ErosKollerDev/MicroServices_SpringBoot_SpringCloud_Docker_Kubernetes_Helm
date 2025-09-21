@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>accounts</artifactId>
-    <version>s10</version>
+    <version>s11</version>
 
     <packaging>jar</packaging>
     <name>accounts</name>
@@ -102,6 +102,10 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -127,10 +131,21 @@
                         <image>eroskoller/${project.artifactId}:${project.version}</image>
                     </to>
                     <from>
-                        <image>eclipse-temurin:21-jre-alpine</image>
-                        <!--                        <image>ghcr.io/graalvm/native-image-community:24</image>-->
-                    </from>
 
+                        <image>eclipse-temurin:24-jre-alpine</image>
+
+                        <!--                        <image>eclipse-temurin:21-jre-alpine</image>-->
+                        <!-- Version 25 not yet available, using latest stable version 24 -->
+                        <!--                        <image>ghcr.io/graalvm/native-image-community:24</image>-->
+                        <!--                        <image>findepi/graalvm:latest</image>-->
+                        <!--                        <image>ghcr.io/graalvm/jdk-community:25</image>-->
+                    </from>
+                    <container>
+                        <jvmFlags>
+                            <jvmFlag>-Xms256m</jvmFlag>
+                            <jvmFlag>-Xmx512m</jvmFlag>
+                        </jvmFlags>
+                    </container>
                 </configuration>
             </plugin>
             <plugin>
