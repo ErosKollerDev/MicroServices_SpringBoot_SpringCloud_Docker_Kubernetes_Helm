@@ -231,7 +231,7 @@ services:
 
   db:
     container_name: postgres-ms
-    image: postgres:16-alpine
+    image: postgres:17.6
     restart: always
     environment:
       - POSTGRES_USER=postgres
@@ -252,12 +252,15 @@ services:
       service: network-deploy-service
 
   rabbit:
-    image: rabbitmq:4-management
+    image: rabbitmq:management
     hostname: rabbitmq
-    container_name: rabbitmq-ms
+    container_name: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
     healthcheck:
       test: rabbitmq-diagnostics check_port_connectivity
       interval: 10s
