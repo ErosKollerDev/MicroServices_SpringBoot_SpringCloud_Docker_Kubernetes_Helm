@@ -31,7 +31,8 @@ build/
 !**/src/test/**/build/
 
 ### Project ###
+/docker-compose-microservices/default/**
 /docker-compose-microservices/default/.data/
-default/.data/
-prod/.data/
-qa/.data/
+/default/.data/
+/prod/.data/
+/qa/.data/
