@@ -32,6 +32,6 @@ build/
 
 ### Project ###
 
-**/docker-compose-microservices/default/**
-**/docker-compose-microservices/prod/**
-**/docker-compose-microservices/qa/**
+**/docker-compose-microservices/default/.data/
+**/docker-compose-microservices/prod/.data/
+**/docker-compose-microservices/qa/.data/
