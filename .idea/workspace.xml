@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
-    </list>
+    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -329,7 +326,7 @@
       <workItem from="1758556098385" duration="3456000" />
       <workItem from="1758564015154" duration="64000" />
       <workItem from="1758564373308" duration="19000" />
-      <workItem from="1758564664124" duration="568000" />
+      <workItem from="1758564664124" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
