@@ -15,7 +15,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
         <module name="gatewayserver" />
       </profile>
@@ -25,10 +24,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
-        <module name="configserver" />
         <module name="cards" />
+        <module name="configserver" />
         <module name="accounts" />
         <module name="loans" />
       </profile>
@@ -37,9 +35,7 @@
       <module name="accounts-11" target="21" />
       <module name="cards-11" target="21" />
       <module name="configserver (1)" target="21" />
-      <module name="configserver-11" target="21" />
       <module name="eurekaserver-11" target="21" />
-      <module name="gatewayserver (1)" target="21" />
       <module name="gatewayserver-11" target="21" />
       <module name="loans-11" target="21" />
     </bytecodeTargetLevel>
@@ -52,11 +48,9 @@
       <module name="cards-11" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="configserver (1)" options="-parameters" />
-      <module name="configserver-11" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="eurekaserver-11" options="-parameters" />
       <module name="gatewayserver" options="-parameters" />
-      <module name="gatewayserver (1)" options="-parameters" />
       <module name="gatewayserver-11" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="loans-11" options="-parameters" />

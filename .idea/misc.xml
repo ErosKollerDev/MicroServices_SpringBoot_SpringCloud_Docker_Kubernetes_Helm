@@ -4,12 +4,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/accounts/pom.xml" />
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/pom.xml" />
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/pom.xml" />
-        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/loans/pom.xml" />
       </list>
     </option>
   </component>

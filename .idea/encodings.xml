@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/accounts/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/cards/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/configserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/eurekaserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/12_OAuth2_keyCloak/loans/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/accounts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/cards/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/gatewayserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/loans/src/main/java" charset="UTF-8" />
   </component>
 </project>
