@@ -4,22 +4,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/10_circuit_breaker/accounts/pom.xml" />
-        <option value="$PROJECT_DIR$/10_circuit_breaker/cards/pom.xml" />
-        <option value="$PROJECT_DIR$/10_circuit_breaker/configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/10_circuit_breaker/eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/10_circuit_breaker/gatewayserver/pom.xml" />
-        <option value="$PROJECT_DIR$/10_circuit_breaker/loans/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/accounts/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/cards/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/gatewayserver/pom.xml" />
-        <option value="$PROJECT_DIR$/11_Observability_Monitoring/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/12_OAuth2_keyCloak/loans/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="temurin-24" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24_PREVIEW" project-jdk-name="temurin-24" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

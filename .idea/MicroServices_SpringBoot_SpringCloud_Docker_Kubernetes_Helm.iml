@@ -12,6 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/08_section_eureka" />
       <excludeFolder url="file://$MODULE_DIR$/09_gateway" />
       <excludeFolder url="file://$MODULE_DIR$/10_circuit_breaker" />
+      <excludeFolder url="file://$MODULE_DIR$/11_Observability_Monitoring" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

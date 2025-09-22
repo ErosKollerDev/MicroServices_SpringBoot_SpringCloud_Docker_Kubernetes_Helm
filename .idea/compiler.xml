@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
-        <module name="eurekaserver (1)" />
       </profile>
       <profile name="Annotation profile for gatewayserver" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,10 +15,8 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
-        <module name="gatewayserver" />
-        <module name="gatewayserver (1)" />
+        <module name="gatewayserver-11 (1)" />
       </profile>
       <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,33 +24,44 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="cards" />
-        <module name="cards (1)" />
-        <module name="loans (1)" />
-        <module name="loans" />
-        <module name="accounts (1)" />
-        <module name="configserver (1)" />
-        <module name="configserver" />
         <module name="accounts" />
+        <module name="configserver-11 (1)" />
+        <module name="loans" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accounts-11" target="21" />
+      <module name="cards-11" target="21" />
+      <module name="configserver" target="21" />
+      <module name="configserver (1)" target="21" />
+      <module name="configserver-11" target="21" />
+      <module name="eurekaserver-11" target="21" />
+      <module name="gatewayserver" target="21" />
+      <module name="gatewayserver (1)" target="21" />
+      <module name="gatewayserver-11" target="21" />
+      <module name="loans-11" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
-      <module name="accounts (1)" options="-parameters" />
+      <module name="accounts-11" options="-parameters" />
       <module name="cards" options="-parameters" />
-      <module name="cards (1)" options="-parameters" />
+      <module name="cards-11" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="configserver (1)" options="-parameters" />
+      <module name="configserver-11" options="-parameters" />
+      <module name="configserver-11 (1)" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
-      <module name="eurekaserver (1)" options="-parameters" />
+      <module name="eurekaserver-11" options="-parameters" />
       <module name="gatewayserver" options="-parameters" />
       <module name="gatewayserver (1)" options="-parameters" />
+      <module name="gatewayserver-11" options="-parameters" />
+      <module name="gatewayserver-11 (1)" options="-parameters" />
       <module name="loans" options="-parameters" />
-      <module name="loans (1)" options="-parameters" />
+      <module name="loans-11" options="-parameters" />
     </option>
   </component>
 </project>

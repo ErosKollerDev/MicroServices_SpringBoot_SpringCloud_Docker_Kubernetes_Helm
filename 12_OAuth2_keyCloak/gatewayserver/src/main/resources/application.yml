@@ -1,0 +1,118 @@
+server:
+  port: 8072
+
+spring:
+  application:
+    name: "gatewayserver"
+  config:
+    import: "${SPRING_CONFIG_IMPORT:optional:configserver:http://localhost:8071/}"
+  devtools:
+    restart:
+      enabled: false
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 1s
+      connect-timeout: 1s
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+          httpclient:
+            connect-timeout: 1000
+            response-timeout: 5s
+
+  #      routes:
+  #        - id: per_route_timeouts
+  #          uri: https://example.org
+  #          predicates:
+  #            - name: Path
+  #              args:
+  #                pattern: /delay/{timeout}
+  #          metadata:
+  #            response-timeout: 200
+  #            connect-timeout: 200
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    gateway:
+      #      enabled: true
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+info:
+  app:
+    name: gatewayserver
+    description: Gateway Server Microservice
+    version: 1.0.0
+    build: 1.0.0
+    environment: default
+
+logging:
+  level:
+    com:
+      eazybytes:
+        gatewayserver: DEBUG
+#  pattern:
+#    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+
+# resilience4j.circuitbreaker:
+#  configs:
+#    default: # accountsCircuitBreaker -> use the name of circuitBreak filter to be more specific
+#      slidingWindowSize: 10 # monitoring 10 requests
+#      permitted-number-of-calls-in-half-open-state: 2 # allow to request in half-open-state
+#      failure-rate-threshold: 50 # 50%
+#      wait-duration-in-open-state: 10000 # 10s to wait to move to half-open-state
+#      registerHealthIndicator: true
+
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      slidingWindowSize: 10
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      waitDurationInOpenState: 10000
+      # recommended additions to capture and publish events
+#      slidingWindowType: COUNT_BASED
+#      minimumNumberOfCalls: 5
+#      automaticTransitionFromOpenToHalfOpenEnabled: true
+#      eventConsumerBufferSize: 100
+      # count these exceptions as failures
+#      recordExceptions:
+#        - org.springframework.web.reactive.function.client.WebClientResponseException
+#        - java.io.IOException
+
+
+#resilience4j.timelimiter:
+#  configs:
+#    default:
+#      timeoutDuration: 5s
+#      cancelRunningFuture: true
