@@ -37,7 +37,9 @@ public class CustomerController {
             @Pattern(regexp = "(^$|[0-9]{11})", message = "Please provide valid mobile number")
             String mobileNumber) {
         log.info("Correlation Id: {}", correlationId);
+//        log.debug("fetchCustomerDetails method start");
         CustomerDetailsDto customerDetailsDto = this.customerServiceImpl.fetchCustomerDetails(mobileNumber, correlationId);
+//        log.debug("fetchCustomerDetails method end");
         return ResponseEntity.ok(customerDetailsDto);
     }
 

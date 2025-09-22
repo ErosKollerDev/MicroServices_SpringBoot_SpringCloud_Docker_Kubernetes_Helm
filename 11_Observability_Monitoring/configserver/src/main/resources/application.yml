@@ -46,5 +46,13 @@ management:
     tags:
       application: ${spring.application.name}
 
+logging:
+  level:
+    com:
+      eazybytes:
+        cards: DEBUG
+#  pattern:
+#    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+
 encrypt:
   key: "${ENCRYPT_KEY:secretkey_1234567890_0987654321}"
