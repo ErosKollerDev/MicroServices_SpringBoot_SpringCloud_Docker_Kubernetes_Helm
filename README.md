@@ -1,19 +1,34 @@
-# MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm
-Name is self explain it self MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm
+# Showcase TechStack with SpringBoot  OAuth2 KeyCloak Integration Project
 
+This project demonstrates the implementation of Docker, Kubernetes, Hibernate/JPA ....and so on with OAuth2 authentication using KeyCloak in a microservices architecture. It
+showcases various modern technologies and practices in cloud-native application development.
 
+## Key Technologies
 
-## DatatransferObject reference
+- **Spring Cloud Gateway**: API Gateway implementation with Spring WebFlux
+- **OAuth2/KeyCloak**: Security implementation for authentication and authorization
+- **Spring Security**: Security configuration with WebFlux support
+- **Docker**: Containerization and deployment
+- **Maven**: Build automation and dependency management
+- **Spring Cloud**: Microservices ecosystem components
+- **Resilience4j**: Circuit breaker implementation
+- **Redis**: Reactive caching support
+- **Prometheus**: Metrics monitoring
+- **Eureka**: Service discovery
+- **Spring Cloud Sleuth**: Distributed tracing
+- **Spring Cloud Sleuth Zipkin**: Distributed tracing with Zipkin
+- **Spring Cloud Config Server**: Centralized configuration management
+- **Spring Cloud Config Client**: Dynamic configuration management
+- **Spring Cloud Load Balancer**: Load balancing
+- **Spring Cloud Circuit Breaker**: Circuit breaker
+- **Spring Cloud OpenFeign**: Client-side load balancing and circuit breaker
+- **Spring Cloud Security**: Security implementation
+- **Spring Cloud Security OAuth2**: OAuth2 implementation
+- **Telemetri**: Traceability and logging  ??? Needs to be implemented OpenTelemetry not working
 
-[Data Transfer Object Pattern](https://martinfowler.com/eaaCatalog/dataTransferObject.html)
+## Docker Commands
 
-
-
-
-
-
-# Convenient Commands
-
+The following commands help manage Docker containers and images for the application deployment:
 
 # Build Docker Images
 
@@ -41,6 +56,7 @@ Name is self explain it self MicroServices_SpringBoot_SpringCloud_Docker_Kuberne
 ```
 # Remove Docker Containers
 ```shell 
+
  docker rm accounts-s04
 ```
 # Push Docker Images
@@ -95,6 +111,7 @@ Name is self explain it self MicroServices_SpringBoot_SpringCloud_Docker_Kuberne
 
 ## Jib CLI build command
 ```shell
+
     mvn compile jib:dockerBuild
 ```
 
