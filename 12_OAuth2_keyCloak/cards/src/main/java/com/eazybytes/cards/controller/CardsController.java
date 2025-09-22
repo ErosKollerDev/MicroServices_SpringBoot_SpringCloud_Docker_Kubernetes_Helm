@@ -39,7 +39,7 @@ public class CardsController {
     @Value("${build.version}")
     private String buildVersion;
 
-    private Environment environment;
+    private final Environment environment;
 
     private final CardsContactInfoDto cardsContactInfDto;
 
