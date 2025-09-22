@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.eazybytes</groupId>
-    <artifactId>gatewayserver-11</artifactId>
+    <artifactId>gatewayserver</artifactId>
     <version>s12</version>
     <name>gatewayserver</name>
     <description>Gateway Service for Eazy Bank Microservices</description>

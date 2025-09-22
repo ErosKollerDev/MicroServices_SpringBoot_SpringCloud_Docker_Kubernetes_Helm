@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
+    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <change afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/src/main/java/com/eazybytes/gatewayserver/config/KeyCloakRoleConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/default/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/prod/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/prod/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/prod/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/prod/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/qa/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/qa/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/qa/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/docker-compose-microservices/qa/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/src/main/java/com/eazybytes/gatewayserver/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/gatewayserver/src/main/java/com/eazybytes/gatewayserver/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_OAuth2_keyCloak/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/12_OAuth2_keyCloak/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +86,11 @@
     "Maven.configserver [clean].executor": "Run",
     "Maven.configserver [install].executor": "Run",
     "Maven.gatewayserver [clean].executor": "Run",
+    "Maven.gatewayserver [compile].executor": "Run",
     "Maven.gatewayserver [install].executor": "Run",
+    "Maven.gatewayserver-11 [clean].executor": "Run",
+    "Maven.gatewayserver-11 [compile].executor": "Run",
+    "Maven.gatewayserver-11 [install].executor": "Run",
     "Maven.loans [clean].executor": "Run",
     "Maven.loans [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -187,7 +208,12 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
+              <entry key="12_AccountsApplication" value="STOPPED" />
+              <entry key="12_CardsApplication" value="STOPPED" />
               <entry key="12_ConfigserverApplication" value="STOPPED" />
+              <entry key="12_EurekaserverApplication" value="STOPPED" />
+              <entry key="12_GatewayserverApplication" value="STOPPED" />
+              <entry key="12_LoansApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -326,7 +352,8 @@
       <workItem from="1758556098385" duration="3456000" />
       <workItem from="1758564015154" duration="64000" />
       <workItem from="1758564373308" duration="19000" />
-      <workItem from="1758564664124" duration="1231000" />
+      <workItem from="1758564664124" duration="3911000" />
+      <workItem from="1758573158286" duration="6443000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />

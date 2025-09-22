@@ -23,8 +23,14 @@ showcases various modern technologies and practices in cloud-native application 
 - **Spring Cloud Circuit Breaker**: Circuit breaker
 - **Spring Cloud OpenFeign**: Client-side load balancing and circuit breaker
 - **Spring Cloud Security**: Security implementation
-- **Spring Cloud Security OAuth2**: OAuth2 implementation
 - **Telemetri**: Traceability and logging  ??? Needs to be implemented OpenTelemetry not working
+- **Spring Cloud Security OAuth2**: OAuth2 implementation
+  > Client Credentials Grant Type
+- **Spring Cloud Security OAuth2**: OAuth2 implementation
+  > Authorization Code Flow
+    - Authorization Code Grant Type
+    - Implicit Grant Type
+    - Resource Owner Password Grant Type 
 
 ## Docker Commands
 

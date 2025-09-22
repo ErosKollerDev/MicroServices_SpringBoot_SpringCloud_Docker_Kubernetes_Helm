@@ -8,15 +8,24 @@ services:
       KEYCLOAK_ADMIN: "admin"
       KEYCLOAK_ADMIN_PASSWORD: "admin"
     command: "start-dev"
+    volumes:
+      - keycloak_data:/opt/keycloak/data
     extends:
       file: common-config.yml
       service: network-deploy-service
-#      eazybank-callcenter-cc
-#      Client Secret: a2UjZkYWAQdDEzVInvRSgcI0FTpUCFJv
-#  List of API Link to be used in the callcenter-cc
-#  http://localhost:7080/realms/master/.well-known/openid-configuration
-#  token_endpoint: http://localhost:7080/realms/master/protocol/openid-connect/token
+  #      eazybank-callcenter-cc
+  #      Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
+  #  List of API Link to be used in the callcenter-cc
+  #  http://localhost:7080/realms/master/.well-known/openid-configuration
+  #  token_endpoint: http://localhost:7080/realms/master/protocol/openid-connect/token
 
+  #  eazybank-callcenter-ac
+  #  Client Secret: L69LSCklP1EoCKqll4KmJApwBKptUCpJ
+  # user: eroskoller@gmail.com
+  # password: admin
+  #  Postman callback URL for AuthCod
+  # Original -> https://oauth.pstmn.io/v1/callback
+  # Workaround -> https://oauth.pstmn.io/v1/browser-callback
   read:
     image: grafana/loki:3.0.0
     command: "-config.file=/etc/loki/config.yaml -target=read"
@@ -109,18 +118,18 @@ services:
       file: common-config.yml
       service: network-deploy-service
 
-#  tempo:
-#    image: grafana/tempo:2.4.2
-#    container_name: tempo
-#    command: -config.file /etc/tempo-config.yml
-#    ports:
-#      - "3110:3100"
-#      - "4317:4317"
-#    volumes:
-#      - ../observability/tempo/tempo.yml:/etc/tempo-config.yml
-#    extends:
-#      file: common-config.yml
-#      service: network-deploy-service
+  #  tempo:
+  #    image: grafana/tempo:2.4.2
+  #    container_name: tempo
+  #    command: -config.file /etc/tempo-config.yml
+  #    ports:
+  #      - "3110:3100"
+  #      - "4317:4317"
+  #    volumes:
+  #      - ../observability/tempo/tempo.yml:/etc/tempo-config.yml
+  #    extends:
+  #      file: common-config.yml
+  #      service: network-deploy-service
 
   grafana:
     image: grafana/grafana:11.0.0
@@ -290,7 +299,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eroskoller/configserver:s11.1"
+    image: "eroskoller/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -311,7 +320,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "eroskoller/eurekaserver:s11.2"
+    image: "eroskoller/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -334,7 +343,7 @@ services:
 
 
   loans:
-    image: "eroskoller/loans:s11.2"
+    image: "eroskoller/loans:s12"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -357,7 +366,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "eroskoller/cards:s11.2"
+    image: "eroskoller/cards:s12"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -378,7 +387,7 @@ services:
       service: microservice-eureka-config
 
   accounts:
-    image: "eroskoller/accounts:s11.2"
+    image: "eroskoller/accounts:s12"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -400,7 +409,7 @@ services:
 
 
   gatewayserver:
-    image: "eroskoller/gatewayserver:s11.2"
+    image: "eroskoller/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
@@ -440,4 +449,6 @@ volumes:
   db:
     driver: local
   grafana-storage:
+    driver: local
+  keycloak_data:
     driver: local

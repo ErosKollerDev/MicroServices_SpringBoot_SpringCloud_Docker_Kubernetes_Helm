@@ -1,5 +1,31 @@
 services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.3.4
+    container_name: keycloak
+    ports:
+      - "7080:8080"
+    environment:
+      KEYCLOAK_ADMIN: "admin"
+      KEYCLOAK_ADMIN_PASSWORD: "admin"
+    command: "start-dev"
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+  #      eazybank-callcenter-cc
+  #      Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
+  #  List of API Link to be used in the callcenter-cc
+  #  http://localhost:7080/realms/master/.well-known/openid-configuration
+  #  token_endpoint: http://localhost:7080/realms/master/protocol/openid-connect/token
 
+  #  eazybank-callcenter-ac
+  #  Client Secret: L69LSCklP1EoCKqll4KmJApwBKptUCpJ
+  # user: eroskoller@gmail.com
+  # password: admin
+  #  Postman callback URL for AuthCod
+  # Original -> https://oauth.pstmn.io/v1/callback
+  # Workaround -> https://oauth.pstmn.io/v1/browser-callback
   read:
     image: grafana/loki:3.0.0
     command: "-config.file=/etc/loki/config.yaml -target=read"
@@ -92,18 +118,18 @@ services:
       file: common-config.yml
       service: network-deploy-service
 
-  tempo:
-    image: grafana/tempo:2.4.2
-    container_name: tempo
-    command: -config.file /etc/tempo-config.yml
-    ports:
-      - "3110:3100"
-      - "4317:4317"
-    volumes:
-      - ../observability/tempo/tempo.yml:/etc/tempo-config.yml
-    extends:
-      file: common-config.yml
-      service: network-deploy-service
+  #  tempo:
+  #    image: grafana/tempo:2.4.2
+  #    container_name: tempo
+  #    command: -config.file /etc/tempo-config.yml
+  #    ports:
+  #      - "3110:3100"
+  #      - "4317:4317"
+  #    volumes:
+  #      - ../observability/tempo/tempo.yml:/etc/tempo-config.yml
+  #    extends:
+  #      file: common-config.yml
+  #      service: network-deploy-service
 
   grafana:
     image: grafana/grafana:11.0.0
@@ -273,7 +299,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eroskoller/configserver:s11"
+    image: "eroskoller/configserver:s12"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -290,9 +316,11 @@ services:
     extends:
       file: common-config.yml
       service: microservice-base-config
+    environment:
+      OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "eroskoller/eurekaserver:s11"
+    image: "eroskoller/eurekaserver:s12"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -311,10 +339,11 @@ services:
       service: microservice-configserver-config
     environment:
       SPRING_APPLICATION_NAME: "eurekaserver"
+      OTEL_SERVICE_NAME: "eurekaserver"
 
 
   loans:
-    image: "eroskoller/loans:s11"
+    image: "eroskoller/loans:s12"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -331,12 +360,13 @@ services:
       start_period: 10s
     environment:
       SPRING_APPLICATION_NAME: "loans"
+      OTEL_SERVICE_NAME: "loans"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   cards:
-    image: "eroskoller/cards:s11"
+    image: "eroskoller/cards:s12"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -351,12 +381,13 @@ services:
       start_period: 10s
     environment:
       SPRING_APPLICATION_NAME: "cards"
+      OTEL_SERVICE_NAME: "cards"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   accounts:
-    image: "eroskoller/accounts:s11"
+    image: "eroskoller/accounts:s12"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -371,13 +402,14 @@ services:
       start_period: 10s
     environment:
       SPRING_APPLICATION_NAME: "accounts"
+      OTEL_SERVICE_NAME: "accounts"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
 
   gatewayserver:
-    image: "eroskoller/gatewayserver:s11"
+    image: "eroskoller/gatewayserver:s12"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
@@ -402,6 +434,8 @@ services:
       SPRING_DATA_REDIS_HOST: redis
       SPRING_DATA_REDIS_PORT: 6379
       SPRING_DATA_REDIS_TIMEOUT: 1s
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: "http://keycloak:8080/realms/master/protocol/openid-connect/certs"
+      OTEL_SERVICE_NAME: "gatewayserver"
     restart: unless-stopped
     extends:
       file: common-config.yml
@@ -415,4 +449,6 @@ volumes:
   db:
     driver: local
   grafana-storage:
+    driver: local
+  keycloak_data:
     driver: local
