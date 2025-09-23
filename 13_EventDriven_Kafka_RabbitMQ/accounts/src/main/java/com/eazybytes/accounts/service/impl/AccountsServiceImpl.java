@@ -3,6 +3,7 @@ package com.eazybytes.accounts.service.impl;
 
 import com.eazybytes.accounts.constants.AccountsConstants;
 import com.eazybytes.accounts.dto.AccountsDto;
+import com.eazybytes.accounts.dto.AccountsMsgDto;
 import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.entity.Accounts;
 import com.eazybytes.accounts.entity.Customer;
@@ -14,17 +15,18 @@ import com.eazybytes.accounts.repository.AccountsRepository;
 import com.eazybytes.accounts.repository.CustomerRepository;
 import com.eazybytes.accounts.service.IAccountsService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
+@Slf4j
 @AllArgsConstructor
 @Service
 public class AccountsServiceImpl implements IAccountsService {
 
     private final AccountsRepository accountsRepository;
     private final CustomerRepository customerRepository;
-
+    private final StreamBridge streamBridge;
 
     @Override
     public void createAccount(CustomerDto customerDto) {
@@ -34,10 +36,20 @@ public class AccountsServiceImpl implements IAccountsService {
             Customer savedCustomer = this.customerRepository.save(customer);
             Accounts newAccount = createNewAccount(savedCustomer);
 //            newAccount.setCreatedBy("Eros");
-            Accounts accountsSaved = this.accountsRepository.save(newAccount);
+            Accounts savedAccount = this.accountsRepository.save(newAccount);
+            this.sendCommunication(savedAccount, savedCustomer);
         } else {
             throw new CustomerAlreadyExistsException("Customer already exists with mobile number: " + customerDto.getMobileNumber());
         }
+    }
+
+    private void sendCommunication(Accounts savedAccount, Customer savedCustomer) {
+        AccountsMsgDto accountsMsgDto =
+                new AccountsMsgDto(savedAccount.getAccountNumber(), savedCustomer.getName(), savedCustomer.getEmail(), savedCustomer.getMobileNumber());
+        log.info("Details of the Account created : {}", accountsMsgDto);
+        log.info("Sending message to sendCommunication-out-0 topic");
+        boolean send = this.streamBridge.send("sendCommunication-out-0", accountsMsgDto);
+        log.info("Message sent to message-out-0 topic : {}", send);
     }
 
     @Override
