@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>gatewayserver</artifactId>
-    <version>s12</version>
+    <version>s13</version>
     <name>gatewayserver</name>
     <description>Gateway Service for Eazy Bank Microservices</description>
     <url/>

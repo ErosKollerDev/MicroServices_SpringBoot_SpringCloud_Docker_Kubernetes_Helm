@@ -196,7 +196,13 @@
 					"name": "UpdateAccountDetails",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"Eros Glauco Koller\",\n    \"email\": \"eroskoller@gmail.cm\",\n    \"mobileNumber\": \"11962861010\",\n    \"accountsDto\": {\n        \"accountNumber\": 2257762598,\n        \"accountType\": \"Savings\",\n        \"branchAddress\": \"123 Main Street, New York\"\n    }\n}",
@@ -225,9 +231,15 @@
 					"name": "DeleteAccountDetails",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "http://localhost:8080/api/delete?mobileNumber=11962861010",
+							"raw": "http://localhost:8080/api/delete?mobileNumber=11962861016",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -240,7 +252,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "11962861010"
+									"value": "11962861016"
 								}
 							]
 						}
@@ -323,7 +335,13 @@
 					"name": "RefreshConfig",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -352,7 +370,13 @@
 					"name": "BusRefresh",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8080/actuator/busrefresh",
 							"protocol": "http",
@@ -374,7 +398,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/actuator/shutdown",
+							"raw": "http://localhost:8080/actuator/shutdown?Authorization=Bearer {{auth_token}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -383,6 +407,12 @@
 							"path": [
 								"actuator",
 								"shutdown"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer {{auth_token}}"
+								}
 							]
 						}
 					},
@@ -429,7 +459,13 @@
 					"name": "CreateCard",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:9000/api/create?mobileNumber=11962861010",
 							"protocol": "http",
@@ -481,7 +517,13 @@
 					"name": "UpdateCardDetails",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"cardNumber\": \"100036044960\",\n    \"cardType\": \"Credit Card\",\n    \"cardStatus\": \"ACTIVE\",\n    \"mobileNumber\": \"11962861010\",\n    \"totalLimit\": 200000,\n    \"amountUsed\": 0,\n    \"availableAmount\": 100000\n}",
@@ -510,7 +552,13 @@
 					"name": "DeleteCardDetails",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:9000/api/delete?mobileNumber=11962861010",
 							"protocol": "http",
@@ -596,7 +644,13 @@
 					"name": "RefreshConfig",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -625,7 +679,13 @@
 					"name": "ShutDown",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:9000/actuator/shutdown",
 							"protocol": "http",
@@ -650,7 +710,13 @@
 					"name": "CreateLoan",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8090/api/create?mobileNumber=11962861010",
 							"protocol": "http",
@@ -702,7 +768,13 @@
 					"name": "UpdateLoanDetails",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"mobileNumber\": \"11962861010\",\n    \"loanNumber\": \"100047561768\",\n    \"loanType\": \"Home Loan\",\n    \"totalLoan\": 100000,\n    \"amountPaid\": 0,\n    \"outstandingAmount\": 100000\n}",
@@ -731,7 +803,13 @@
 					"name": "DeleteLoanDetails",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8090/api/delete?mobileNumber=11962861010",
 							"protocol": "http",
@@ -817,7 +895,13 @@
 					"name": "RefreshConfig",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -846,7 +930,13 @@
 					"name": "ShutDown",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8090/actuator/shutdown",
 							"protocol": "http",
@@ -1332,7 +1422,14 @@
 					"name": "gateway FetchCustomerDetails",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "eazybank-correlation-id",
+								"value": "eros",
+								"type": "text",
+								"disabled": true
+							}
+						],
 						"url": {
 							"raw": "http://localhost:8072/gateway/accounts/api/fetchCustomerDetails?mobileNumber=11962861010",
 							"protocol": "http",
@@ -1667,6 +1764,40 @@
 			"item": [
 				{
 					"name": "ClientCredentials_AccessToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the response is successful (status code 200-299)",
+									"if (pm.response.code >= 200 && pm.response.code < 300) {",
+									"    // Parse the JSON response",
+									"    const response = pm.response.json();",
+									"    ",
+									"    // Assuming the token is in a field called 'token'",
+									"    // Adjust the field name based on your API's response structure",
+									"    const token = response.token || response.access_token || response.data.token;",
+									"   ",
+									"    if (token) {",
+									"        // Save the token to an environment variable",
+									"        pm.environment.set(\"auth_token\", token);",
+									"        console.log(\"Token saved successfully\");",
+									"        console.log(token);",
+									"    } else {",
+									"        console.log(\"No token found in response\");",
+									"    }",
+									"} else {",
+									"    console.log(\"Request failed with status: \" + pm.response.code);",
+									"}",
+									"",
+									"// Optional: Log the full response to inspect it",
+									"// console.log(pm.response.text());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1685,7 +1816,7 @@
 								},
 								{
 									"key": "client_secret",
-									"value": "a2UjZkYWAQdDEzVInvRSgcI0FTpUCFJv",
+									"value": "wYXd4AyYBXimDDAHB260HytDvFxV5cqw",
 									"type": "text"
 								},
 								{
@@ -1718,6 +1849,88 @@
 		{
 			"name": "gatewayserver_security",
 			"item": [
+				{
+					"name": "ClientCredentials_AccessToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the response is successful (status code 200-299)",
+									"if (pm.response.code >= 200 && pm.response.code < 300) {",
+									"    // Parse the JSON response",
+									"    const response = pm.response.json();",
+									"    ",
+									"    // Assuming the token is in a field called 'token'",
+									"    // Adjust the field name based on your API's response structure",
+									"    const token = response.token || response.access_token || response.data.token;",
+									"   ",
+									"    if (token) {",
+									"        // Save the token to an environment variable",
+									"        pm.environment.set(\"auth_token\", token);",
+									"        console.log(\"Token saved successfully\");",
+									"        console.log(token);",
+									"    } else {",
+									"        console.log(\"No token found in response\");",
+									"    }",
+									"} else {",
+									"    console.log(\"Request failed with status: \" + pm.response.code);",
+									"}",
+									"",
+									"// Optional: Log the full response to inspect it",
+									"// console.log(pm.response.text());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "eazybank-callcenter-cc",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "wYXd4AyYBXimDDAHB260HytDvFxV5cqw",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "openid email profile",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:7080/realms/master/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"realms",
+								"master",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
 				{
 					"name": "Accounts_GET_PermitAll",
 					"request": {
@@ -1833,7 +2046,7 @@
 							"oauth2": [
 								{
 									"key": "clientSecret",
-									"value": "a2UjZkYWAQdDEzVInvRSgcI0FTpUCFJv",
+									"value": "wYXd4AyYBXimDDAHB260HytDvFxV5cqw",
 									"type": "string"
 								},
 								{
@@ -1874,10 +2087,16 @@
 							]
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{auth_token}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Andrea Minharro Gambin\",\n    \"email\": \"andreia.gambin@gmail.com\",\n    \"mobileNumber\": \"11998244114\"\n}",
+							"raw": "{\n    \"name\": \"Steve and The Seagoes\",\n    \"email\": \"steve@gmail.com\",\n    \"mobileNumber\": \"11962861021\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1909,7 +2128,7 @@
 							"oauth2": [
 								{
 									"key": "clientSecret",
-									"value": "a2UjZkYWAQdDEzVInvRSgcI0FTpUCFJv",
+									"value": "wYXd4AyYBXimDDAHB260HytDvFxV5cqw",
 									"type": "string"
 								},
 								{
@@ -1961,7 +2180,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8072/gateway/cards/api/create?mobileNumber=11998244114",
+							"raw": "http://localhost:8072/gateway/cards/api/create?mobileNumber=11962861014",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1976,7 +2195,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "11998244114"
+									"value": "11962861014"
 								}
 							]
 						}
@@ -1991,7 +2210,7 @@
 							"oauth2": [
 								{
 									"key": "clientSecret",
-									"value": "a2UjZkYWAQdDEzVInvRSgcI0FTpUCFJv",
+									"value": "wYXd4AyYBXimDDAHB260HytDvFxV5cqw",
 									"type": "string"
 								},
 								{
@@ -2034,7 +2253,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8072/gateway/loans/api/create?mobileNumber=11998244114",
+							"raw": "http://localhost:8072/gateway/loans/api/create?mobileNumber=11962861014",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2049,7 +2268,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "11998244114"
+									"value": "11962861014"
 								}
 							]
 						}
@@ -2064,8 +2283,18 @@
 							"oauth2": [
 								{
 									"key": "clientSecret",
-									"value": "w0mzY8TPy9ngQcDA4vtu7vZXS1jQWaE2",
+									"value": "L69LSCklP1EoCKqll4KmJApwBKptUCpJ",
 									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
 								},
 								{
 									"key": "client_authentication",
@@ -2108,11 +2337,6 @@
 									"type": "string"
 								},
 								{
-									"key": "useBrowser",
-									"value": true,
-									"type": "boolean"
-								},
-								{
 									"key": "grant_type",
 									"value": "authorization_code",
 									"type": "string"
@@ -2133,7 +2357,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Madan Reddy\",\n    \"email\": \"tutor@eazybytes\",\n    \"mobileNumber\": \"4354437687\"\n}",
+							"raw": "{\n    \"name\": \"Tim Diesel\",\n    \"email\": \"timdiesel@gmail.com\",\n    \"mobileNumber\": \"11962861011\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2164,9 +2388,24 @@
 							"type": "oauth2",
 							"oauth2": [
 								{
-									"key": "clientSecret",
-									"value": "6AXs2apKOCVj3Q1d1QGTXOIUk1rylAqP",
+									"key": "state",
+									"value": "ew34er-344fgfg-5gfgfgsaasasas",
 									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "NJVhMCZnWiUcBrIMaDqaig3HAXU4pXj8",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
 								},
 								{
 									"key": "clientId",
@@ -2189,19 +2428,9 @@
 									"type": "string"
 								},
 								{
-									"key": "state",
-									"value": "ew34er-344fgfg-5gfgfg",
-									"type": "string"
-								},
-								{
 									"key": "authUrl",
 									"value": "http://localhost:7080/realms/master/protocol/openid-connect/auth",
 									"type": "string"
-								},
-								{
-									"key": "useBrowser",
-									"value": true,
-									"type": "boolean"
 								},
 								{
 									"key": "grant_type",
@@ -2242,7 +2471,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8072/gateway/cards/api/create?mobileNumber=4354437687",
+							"raw": "http://localhost:8072/gateway/cards/api/create?mobileNumber=11962861011",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2257,7 +2486,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "4354437687"
+									"value": "11962861011"
 								}
 							]
 						}
@@ -2272,8 +2501,18 @@
 							"oauth2": [
 								{
 									"key": "clientSecret",
-									"value": "6AXs2apKOCVj3Q1d1QGTXOIUk1rylAqP",
+									"value": "NJVhMCZnWiUcBrIMaDqaig3HAXU4pXj8",
 									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "useBrowser",
+									"value": false,
+									"type": "boolean"
 								},
 								{
 									"key": "clientId",
@@ -2329,18 +2568,13 @@
 									"key": "state",
 									"value": "ew34er-344fgfg-5gfgfg",
 									"type": "string"
-								},
-								{
-									"key": "useBrowser",
-									"value": true,
-									"type": "boolean"
 								}
 							]
 						},
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8072/gateway/loans/api/create?mobileNumber=4354437687",
+							"raw": "http://localhost:8072/gateway/loans/api/create?mobileNumber=11962861011",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2355,7 +2589,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "4354437687"
+									"value": "11962861011"
 								}
 							]
 						}
@@ -2368,7 +2602,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8072/gateway/accounts/api/fetchCustomerDetails?mobileNumber=11998244114",
+							"raw": "http://localhost:8072/gateway/accounts/api/fetchCustomerDetails?mobileNumber=11962861014",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2383,7 +2617,7 @@
 							"query": [
 								{
 									"key": "mobileNumber",
-									"value": "11998244114"
+									"value": "11962861014"
 								}
 							]
 						}
@@ -2402,7 +2636,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Madan Reddy\",\n    \"email\": \"tutor@eazybytes\",\n    \"mobileNumber\": \"4354437687\"\n}",
+							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Eros Glauco Koller\",\n    \"email\": \"eroskoller@gmail.com\",\n    \"mobileNumber\": \"11962861099\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2430,7 +2664,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Madan Reddy\",\n    \"email\": \"tutor@eazybytes\",\n    \"mobileNumber\": \"4354437687\"\n}",
+							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Eros Glauco Koller\",\n    \"email\": \"eroskoller@gmail.com\",\n    \"mobileNumber\": \"11962861099\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2452,13 +2686,41 @@
 					"response": []
 				},
 				{
+					"name": "msg",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "Sending a msg",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9010/msg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"msg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "emailsms",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Madan Reddy\",\n    \"email\": \"tutor@eazybytes\",\n    \"mobileNumber\": \"4354437687\"\n}",
+							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Eros Glauco Koller\",\n    \"email\": \"eroskoller@gmail.com\",\n    \"mobileNumber\": \"11962861099\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2474,6 +2736,34 @@
 							"port": "9010",
 							"path": [
 								"emailsms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "emailsms Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accountNumber\": 1234545454,\n    \"name\": \"Madan Reddy\",\n    \"email\": \"tutor@eazybytes\",\n    \"mobileNumber\": \"4354437687\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9010/emailsmsmsg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9010",
+							"path": [
+								"emailsmsmsg"
 							]
 						}
 					},

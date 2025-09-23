@@ -321,7 +321,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eroskoller/configserver:s12"
+    image: "eroskoller/configserver:s13"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -342,7 +342,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "eroskoller/eurekaserver:s12"
+    image: "eroskoller/eurekaserver:s13"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -365,7 +365,7 @@ services:
 
 
   loans:
-    image: "eroskoller/loans:s12"
+    image: "eroskoller/loans:s13"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -388,7 +388,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "eroskoller/cards:s12"
+    image: "eroskoller/cards:s13"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -409,7 +409,7 @@ services:
       service: microservice-eureka-config
 
   accounts:
-    image: "eroskoller/accounts:s12"
+    image: "eroskoller/accounts:s13"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -429,9 +429,23 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
+  message:
+    image: "eroskoller/message:s13"
+    container_name: message-ms
+    ports:
+      - "9010:9010"
+    depends_on:
+      accounts:
+        condition: service_healthy
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
 
   gatewayserver:
-    image: "eroskoller/gatewayserver:s12"
+    image: "eroskoller/gatewayserver:s13"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"

@@ -14,7 +14,7 @@ spring:
         emailsms-in-0:
           destination: send-communication
           group: ${spring.application.name}
-          
+
         # emailsms-out-0: Output binding that sends messages to 'communication-sent' queue
         # after the message service completes email/SMS processing
         emailsms-out-0:

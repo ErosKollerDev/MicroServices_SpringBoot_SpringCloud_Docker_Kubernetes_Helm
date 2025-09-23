@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>configserver</artifactId>
-    <version>s12</version>
+    <version>s13</version>
     <name>configserver</name>
     <description>MicroService to hold configurations for profiles, environments vars</description>
     <url/>

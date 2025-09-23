@@ -37,19 +37,19 @@ public class AccountsServiceImpl implements IAccountsService {
             Accounts newAccount = createNewAccount(savedCustomer);
 //            newAccount.setCreatedBy("Eros");
             Accounts savedAccount = this.accountsRepository.save(newAccount);
-            this.sendCommunication(savedAccount, savedCustomer);
+            this.sendCommunicationProducer(savedAccount, savedCustomer);
         } else {
             throw new CustomerAlreadyExistsException("Customer already exists with mobile number: " + customerDto.getMobileNumber());
         }
     }
 
-    private void sendCommunication(Accounts savedAccount, Customer savedCustomer) {
+    private void sendCommunicationProducer(Accounts savedAccount, Customer savedCustomer) {
         AccountsMsgDto accountsMsgDto =
                 new AccountsMsgDto(savedAccount.getAccountNumber(), savedCustomer.getName(), savedCustomer.getEmail(), savedCustomer.getMobileNumber());
         log.info("Details of the Account created : {}", accountsMsgDto);
         log.info("Sending message to sendCommunication-out-0 topic");
         boolean send = this.streamBridge.send("sendCommunication-out-0", accountsMsgDto);
-        log.info("Message sent to message-out-0 topic : {}", send);
+        log.info("Message produced with success to message-out-0 topic : {}", send);
     }
 
     @Override
@@ -91,6 +91,16 @@ public class AccountsServiceImpl implements IAccountsService {
                 .orElseThrow(() -> new ResourceNotFoundException("Customer not found ", "mobile number: ", mobileNumber));
         accountsRepository.deleteByCustomerId(customer.getCustomerId());
         this.customerRepository.deleteById(customer.getCustomerId());
+        return true;
+    }
+
+    @Override
+    public boolean updateCommunicationStatus(Long accountNumber) {
+        Accounts accounts = this.accountsRepository.findById(accountNumber).orElseThrow(() -> {
+            return new ResourceNotFoundException("Account", "account number", accountNumber.toString());
+        });
+        accounts.setCommunicationSw(true);
+        this.accountsRepository.save(accounts);
         return true;
     }
 

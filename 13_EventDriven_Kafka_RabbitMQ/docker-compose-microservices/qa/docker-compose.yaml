@@ -13,19 +13,41 @@ services:
     extends:
       file: common-config.yml
       service: network-deploy-service
-  #      eazybank-callcenter-cc
-  #      Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
+  #  eazybank-callcenter-cc
+  #  Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
   #  List of API Link to be used in the callcenter-cc
   #  http://localhost:7080/realms/master/.well-known/openid-configuration
   #  token_endpoint: http://localhost:7080/realms/master/protocol/openid-connect/token
 
   #  eazybank-callcenter-ac
   #  Client Secret: L69LSCklP1EoCKqll4KmJApwBKptUCpJ
-  # user: eroskoller@gmail.com
-  # password: admin
+  #  user: eroskoller@gmail.com
+  #  password: admin
   #  Postman callback URL for AuthCod
-  # Original -> https://oauth.pstmn.io/v1/callback
-  # Workaround -> https://oauth.pstmn.io/v1/browser-callback
+  #  Original -> https://oauth.pstmn.io/v1/callback
+  #  Workaround -> https://oauth.pstmn.io/v1/browser-callback
+
+  #  keycloak:
+  #    image: quay.io/keycloak/keycloak:26.3.4
+  #    container_name: keycloak
+  #    ports:
+  #      - "7080:8080"
+  #    environment:
+  #      KEYCLOAK_ADMIN: "admin"
+  #      KEYCLOAK_ADMIN_PASSWORD: "admin"
+  #      KC_DB: postgres
+  #      KC_DB_URL: jdbc:postgresql://db:5432/keycloak
+  #      KC_DB_USERNAME: postgres
+  #      KC_DB_PASSWORD: postgres
+  #      KC_DB_SCHEMA: public
+  #    command: "start"
+  #    depends_on:
+  #      db:
+  #        condition: service_healthy
+  #    extends:
+  #      file: common-config.yml
+  #      service: network-deploy-service
+
   read:
     image: grafana/loki:3.0.0
     command: "-config.file=/etc/loki/config.yaml -target=read"
@@ -299,7 +321,7 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "eroskoller/configserver:s12"
+    image: "eroskoller/configserver:s13"
     container_name: configserver-ms
     ports:
       - "8071:8071"
@@ -320,7 +342,7 @@ services:
       OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
-    image: "eroskoller/eurekaserver:s12"
+    image: "eroskoller/eurekaserver:s13"
     container_name: eurekaserver-ms
     ports:
       - "8070:8070"
@@ -343,7 +365,7 @@ services:
 
 
   loans:
-    image: "eroskoller/loans:s12"
+    image: "eroskoller/loans:s13"
     container_name: loans-ms
     ports:
       - "8090:8090"
@@ -366,7 +388,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "eroskoller/cards:s12"
+    image: "eroskoller/cards:s13"
     container_name: cards-ms
     ports:
       - "9000:9000"
@@ -387,7 +409,7 @@ services:
       service: microservice-eureka-config
 
   accounts:
-    image: "eroskoller/accounts:s12"
+    image: "eroskoller/accounts:s13"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -407,9 +429,23 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
+  message:
+    image: "eroskoller/message:s13"
+    container_name: message-ms
+    ports:
+      - "9010:9010"
+    depends_on:
+      accounts:
+        condition: service_healthy
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+    extends:
+      file: common-config.yml
+      service: network-deploy-service
+
 
   gatewayserver:
-    image: "eroskoller/gatewayserver:s12"
+    image: "eroskoller/gatewayserver:s13"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"

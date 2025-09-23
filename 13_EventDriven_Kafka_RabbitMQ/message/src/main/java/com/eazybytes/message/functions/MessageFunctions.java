@@ -10,13 +10,14 @@ import java.util.function.Function;
 
 
 @Slf4j
+
 @Configuration
 public class MessageFunctions {
 
     @Bean
     public Function<AccountsMsgDto, AccountsMsgDto> email() {
         return (accountsMsgDto) -> {
-            log.info("Processing Email Message ...\n Sending email ... \n Email details : {}", accountsMsgDto);
+            log.info("Consumer Email : Processing Email Message ...\n Sending email ... \n Email details : {}", accountsMsgDto);
             return accountsMsgDto;
         };
 
@@ -25,7 +26,7 @@ public class MessageFunctions {
     @Bean
     public Function<AccountsMsgDto, Long> sms() {
         return (sms) -> {
-            log.info("Processing SMS Message ...\n Sending SMS ... \n SMS details :{}", sms);
+            log.info("Consumer SMS :Processing SMS Message ...\n Sending SMS ... \n SMS details :{}", sms);
             return sms.accountNumber();
         };
     }
@@ -33,8 +34,8 @@ public class MessageFunctions {
     @Bean
     public Function<AccountsMsgDto, String> msg() {
         return (msg) -> {
-            log.info("Message received : {}", msg);
-            return "Processing MSG Message ...\n Sending MSG ... \n MSG details :{}".formatted(msg.mobileNumber());
+            log.info("Consumer MSG :Message received : {}", msg);
+            return "\nConsumer MSG Message ...\n Received MSG ... \n MSG details :{}".formatted(msg.mobileNumber());
         };
     }
 }
