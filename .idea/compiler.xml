@@ -9,26 +9,27 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
       </profile>
-      <profile name="Annotation profile for gatewayserver" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
-        </processorPath>
-        <module name="gatewayserver" />
-      </profile>
-      <profile name="Annotation profile for loans" enabled="true">
+      <profile name="Annotation profile for accounts" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
+        <module name="accounts" />
         <module name="cards" />
         <module name="configserver" />
-        <module name="accounts" />
         <module name="loans" />
+      </profile>
+      <profile name="Annotation profile for message" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
+        </processorPath>
+        <module name="message" />
+        <module name="gatewayserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -54,6 +55,7 @@
       <module name="gatewayserver-11" options="-parameters" />
       <module name="loans" options="-parameters" />
       <module name="loans-11" options="-parameters" />
+      <module name="message" options="-parameters" />
     </option>
   </component>
 </project>

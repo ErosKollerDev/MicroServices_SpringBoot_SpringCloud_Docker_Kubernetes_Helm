@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/eurekaserver/pom.xml" />
         <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/gatewayserver/pom.xml" />
         <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/message/pom.xml" />
       </list>
     </option>
   </component>

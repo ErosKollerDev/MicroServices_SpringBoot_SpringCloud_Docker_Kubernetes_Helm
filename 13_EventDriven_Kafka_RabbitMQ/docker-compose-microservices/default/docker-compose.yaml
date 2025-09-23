@@ -13,19 +13,41 @@ services:
     extends:
       file: common-config.yml
       service: network-deploy-service
-  #      eazybank-callcenter-cc
-  #      Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
+  #  eazybank-callcenter-cc
+  #  Client Secret: wYXd4AyYBXimDDAHB260HytDvFxV5cqw
   #  List of API Link to be used in the callcenter-cc
   #  http://localhost:7080/realms/master/.well-known/openid-configuration
   #  token_endpoint: http://localhost:7080/realms/master/protocol/openid-connect/token
 
   #  eazybank-callcenter-ac
   #  Client Secret: L69LSCklP1EoCKqll4KmJApwBKptUCpJ
-  # user: eroskoller@gmail.com
-  # password: admin
+  #  user: eroskoller@gmail.com
+  #  password: admin
   #  Postman callback URL for AuthCod
-  # Original -> https://oauth.pstmn.io/v1/callback
-  # Workaround -> https://oauth.pstmn.io/v1/browser-callback
+  #  Original -> https://oauth.pstmn.io/v1/callback
+  #  Workaround -> https://oauth.pstmn.io/v1/browser-callback
+
+#  keycloak:
+#    image: quay.io/keycloak/keycloak:26.3.4
+#    container_name: keycloak
+#    ports:
+#      - "7080:8080"
+#    environment:
+#      KEYCLOAK_ADMIN: "admin"
+#      KEYCLOAK_ADMIN_PASSWORD: "admin"
+#      KC_DB: postgres
+#      KC_DB_URL: jdbc:postgresql://db:5432/keycloak
+#      KC_DB_USERNAME: postgres
+#      KC_DB_PASSWORD: postgres
+#      KC_DB_SCHEMA: public
+#    command: "start"
+#    depends_on:
+#      db:
+#        condition: service_healthy
+#    extends:
+#      file: common-config.yml
+#      service: network-deploy-service
+
   read:
     image: grafana/loki:3.0.0
     command: "-config.file=/etc/loki/config.yaml -target=read"

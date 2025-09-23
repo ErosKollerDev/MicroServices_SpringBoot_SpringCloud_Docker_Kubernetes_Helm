@@ -2,12 +2,9 @@ package com.eazybytes.accounts.controller;
 
 
 import com.eazybytes.accounts.dto.CustomerDetailsDto;
-import com.eazybytes.accounts.service.client.ICardsFeignClient;
-import com.eazybytes.accounts.service.client.ILoansFeignClient;
 import com.eazybytes.accounts.service.impl.CustomerServiceImpl;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;

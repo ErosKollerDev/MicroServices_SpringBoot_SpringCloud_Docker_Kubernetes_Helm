@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers" />
+    <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/accounts/src/main/java/com/eazybytes/accounts/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/docker-compose-microservices/default/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/docker-compose-microservices/default/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +139,9 @@
     "Spring Boot.12_EurekaserverApplication.executor": "Run",
     "Spring Boot.12_GatewayserverApplication.executor": "Debug",
     "Spring Boot.12_LoansApplication.executor": "Run",
+    "Spring Boot.13_CardsApplication.executor": "Run",
+    "Spring Boot.13_ConfigserverApplication.executor": "Run",
+    "Spring Boot.13_EurekaserverApplication.executor": "Run",
     "Spring Boot.AccountsApplication (1).executor": "Run",
     "Spring Boot.AccountsApplication.executor": "Run",
     "Spring Boot.CardsApplication.executor": "Run",
@@ -138,13 +150,13 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/13_EventDriven_Kafka_RabbitMQ/accounts",
+    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/13_EventDriven_Kafka_RabbitMQ/message",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.106770836",
     "project.structure.side.proportion": "0.18261378",
     "run.configurations.included.in.services": "true",
@@ -191,19 +203,16 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="12_AccountsApplication" value="STOPPED" />
-              <entry key="12_CardsApplication" value="STOPPED" />
-              <entry key="12_ConfigserverApplication" value="STOPPED" />
-              <entry key="12_EurekaserverApplication" value="STOPPED" />
-              <entry key="12_GatewayserverApplication" value="STOPPED" />
-              <entry key="12_LoansApplication" value="STOPPED" />
+              <entry key="13_CardsApplication" value="STOPPED" />
+              <entry key="13_ConfigserverApplication" value="STOPPED" />
+              <entry key="13_EurekaserverApplication" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.13_LoansApplication">
+  <component name="RunManager" selected="Spring Boot.13_CardsApplication">
     <configuration name="13_AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="accounts" />
@@ -250,6 +259,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="message" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.message.MessageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -266,6 +282,7 @@
     </configuration>
     <list>
       <item itemvalue="Docker.default/docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="Spring Boot.MessageApplication" />
       <item itemvalue="Spring Boot.13_AccountsApplication" />
       <item itemvalue="Spring Boot.13_CardsApplication" />
       <item itemvalue="Spring Boot.13_ConfigserverApplication" />
@@ -336,7 +353,8 @@
       <workItem from="1758564015154" duration="64000" />
       <workItem from="1758564373308" duration="19000" />
       <workItem from="1758564664124" duration="3911000" />
-      <workItem from="1758573158286" duration="6791000" />
+      <workItem from="1758573158286" duration="7893000" />
+      <workItem from="1758620957695" duration="4712000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
