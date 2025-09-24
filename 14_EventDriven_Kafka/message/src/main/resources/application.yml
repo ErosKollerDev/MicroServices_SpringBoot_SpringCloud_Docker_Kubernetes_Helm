@@ -19,7 +19,9 @@ spring:
         # after the message service completes email/SMS processing
         emailsms-out-0:
           destination: communication-sent
-
+      kafka:
+        binder:
+          brokers: "${KAFKA_BROKERS:localhost:9092}"
 
 #  rabbitmq:
 #    host: localhost

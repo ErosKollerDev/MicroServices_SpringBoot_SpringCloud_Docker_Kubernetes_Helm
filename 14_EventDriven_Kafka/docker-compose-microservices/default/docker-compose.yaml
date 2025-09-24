@@ -321,6 +321,62 @@ services:
       file: common-config.yml
       service: network-deploy-service
 
+  # One-time init to set correct ownership on the Kafka data volume
+#  kafka-init:
+#    image: alpine:3.20
+#    user: "0:0"
+#    command: [ "sh", "-lc", "mkdir -p /var/lib/kafka/data && chown -R 1000:1000 /var/lib/kafka/data" ]
+#    volumes:
+#      - kafka_data:/var/lib/kafka/data
+#    restart: "no"
+
+#  kafka:
+#    container_name: kafka-ms
+#    image: confluentinc/cp-kafka:7.6.1
+#    depends_on:
+#      kafka-init:
+#        condition: service_completed_successfully
+#    ports:
+#      - "9092:9092"
+#    environment:
+#      # KRaft single-node broker+controller
+#      KAFKA_PROCESS_ROLES: "broker,controller"
+#      KAFKA_NODE_ID: "1"
+#      # Controller quorum voters: <nodeId>@<host>:<controllerPort>
+#      KAFKA_CONTROLLER_QUORUM_VOTERS: "1@kafka:29093"
+#      KAFKA_CONTROLLER_LISTENER_NAMES: "CONTROLLER"
+#
+#      # Listeners:
+#      # - CONTROLLER: internal controller port
+#      # - PLAINTEXT: internal broker port (used by other containers) -> advertised as kafka:29092
+#      # - EXTERNAL: external broker port (used by host/IDE) -> advertised as localhost:9092
+#      KAFKA_LISTENERS: "PLAINTEXT://0.0.0.0:29092,EXTERNAL://0.0.0.0:9092,CONTROLLER://0.0.0.0:29093"
+#      KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://kafka:29092,EXTERNAL://localhost:9092"
+#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT,CONTROLLER:PLAINTEXT"
+#      KAFKA_INTER_BROKER_LISTENER_NAME: "PLAINTEXT"
+#
+#      # Use a clean log directory to avoid stray files
+#      KAFKA_LOG_DIRS: "/var/lib/kafka/data/kraft-combined-logs"
+#
+#      # Required single-node settings
+#      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
+#      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: "1"
+#      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: "1"
+#      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: "0"
+#
+#      # Provide CLUSTER_ID for KRaft formatting (must remain stable while kafka_data persists)
+#      CLUSTER_ID: "MkU3OEVBNTBBNTJENDM2Qk"
+#    volumes:
+#      - kafka_data:/var/lib/kafka/data
+#    healthcheck:
+#      test: [ "CMD-SHELL", "kafka-broker-api-versions --bootstrap-server localhost:9092 >/dev/null 2>&1 || exit 1" ]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 10
+#    extends:
+#      file: common-config.yml
+#      service: network-deploy-service
+
   kafka:
     image: docker.io/bitnami/kafka:3.7
     container_name: kafka
@@ -350,6 +406,8 @@ services:
       - "8071:8071"
     depends_on:
       rabbit:
+        condition: service_healthy
+      kafka:
         condition: service_healthy
     healthcheck:
       #      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
@@ -432,7 +490,7 @@ services:
       service: microservice-eureka-config
 
   accounts:
-    image: "eroskoller/accounts:s13"
+    image: "eroskoller/accounts:s14"
     container_name: accounts-ms
     ports:
       - "8080:8080"
@@ -446,14 +504,16 @@ services:
       retries: 10
       start_period: 10s
     environment:
+#      SPRING_RABBITMQ_HOST: "rabbit"
       SPRING_APPLICATION_NAME: "accounts"
-      OTEL_SERVICE_NAME: "accounts"
+      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
+#      OTEL_SERVICE_NAME: "accounts"
     extends:
       file: common-config.yml
       service: microservice-eureka-config
 
   message:
-    image: "eroskoller/message:s13"
+    image: "eroskoller/message:s14"
     container_name: message-ms
     ports:
       - "9010:9010"
@@ -461,7 +521,9 @@ services:
       accounts:
         condition: service_healthy
     environment:
-      SPRING_RABBITMQ_HOST: "rabbit"
+      KAFKA_BROKERS: kafka:9092
+#      SPRING_RABBITMQ_HOST: "rabbit"
+#      SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: "kafka:9092"
     extends:
       file: common-config.yml
       service: network-deploy-service

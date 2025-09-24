@@ -8,13 +8,6 @@ spring:
     active: "${SPRING_PROFILES_ACTIVE:qa}"
   config:
     import: "${SPRING_CLOUD_CONFIG_URI:optional:configserver:http://localhost:8071/}"
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-
   #  devtools:
   #    restart:
   #      trigger-file: .reloadtrigger
@@ -38,12 +31,23 @@ spring:
     function:
       definition: updateAccountCommunicationStatus
     stream:
+      defaultBinder: kafka
       bindings:
+        sendCommunication-out-0:
+          destination: send-communication #communication-topic
+          binder: kafka
         updateAccountCommunicationStatus-in-0:
           destination: communication-sent
           group: ${spring.application.name}
-        sendCommunication-out-0:
-          destination: send-communication #communication-topic
+          binder: kafka
+      kafka:
+        binder:
+          brokers: "${KAFKA_BROKERS:localhost:9092}"
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
 
 management:
   endpoints:

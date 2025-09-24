@@ -37,19 +37,19 @@ public class AccountsServiceImpl implements IAccountsService {
             Accounts newAccount = createNewAccount(savedCustomer);
 //            newAccount.setCreatedBy("Eros");
             Accounts savedAccount = this.accountsRepository.save(newAccount);
-            this.sendCommunicationProducer(savedAccount, savedCustomer);
+            this.sendCommunication(savedAccount, savedCustomer);
         } else {
             throw new CustomerAlreadyExistsException("Customer already exists with mobile number: " + customerDto.getMobileNumber());
         }
     }
 
-    private void sendCommunicationProducer(Accounts savedAccount, Customer savedCustomer) {
+    private void sendCommunication(Accounts savedAccount, Customer savedCustomer) {
         AccountsMsgDto accountsMsgDto =
                 new AccountsMsgDto(savedAccount.getAccountNumber(), savedCustomer.getName(), savedCustomer.getEmail(), savedCustomer.getMobileNumber());
-        log.info("Details of the Account created : {}", accountsMsgDto);
-        log.info("Sending message to sendCommunication-out-0 topic");
+        log.info("Details of the Account created :\n {}", accountsMsgDto);
+        log.info("Sending message to \nsendCommunication-out-0 topic");
         boolean send = this.streamBridge.send("sendCommunication-out-0", accountsMsgDto);
-        log.info("Message produced with success to message-out-0 topic : {}", send);
+        log.info("Message produced with success to message-out-0 topic : \n{}", send);
     }
 
     @Override

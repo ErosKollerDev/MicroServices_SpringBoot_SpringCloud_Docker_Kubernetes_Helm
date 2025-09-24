@@ -20,7 +20,7 @@ public class AccountsFunctions {
     public Consumer<Long> updateAccountCommunicationStatus() {
         return (accountNumber) -> {
             this.accountsService.updateCommunicationStatus(accountNumber);
-            log.info("\nAccountNumber from Queue : {}\nEmail and SMS send it with success .....\n####################################################", accountNumber);
+            log.info("\nUpdated\nAccountNumber from Queue : {}\nEmail and SMS send it with success .....\n####################################################", accountNumber);
         };
     }
 
