@@ -4,13 +4,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/accounts/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/cards/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/gatewayserver/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/loans/pom.xml" />
-        <option value="$PROJECT_DIR$/13_EventDriven_Kafka_RabbitMQ/message/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/message/pom.xml" />
       </list>
     </option>
   </component>
