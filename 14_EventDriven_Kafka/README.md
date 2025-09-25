@@ -75,12 +75,14 @@ The following commands help manage Docker containers and images for the applicat
 **_Ex_**
 ```xml
 <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <image>
-                        <name>eroskoller/${project.artifactId}:${project.version}</name>
-                    </image>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <configuration>
+        <image>
+            <name>eroskoller/${project.artifactId}:${project.version}</name>
+        </image>
+    </configuration>
+</plugin>
 ```
 ## Build with buildpacks
 ```shell
@@ -111,7 +113,21 @@ The following commands help manage Docker containers and images for the applicat
 
 ## Jib CLI build command
 ```shell
-
     mvn compile jib:dockerBuild
+```
+
+## Quick build all with Jib
+- Using helper script (runs from this folder):
+```shell
+./build-jib-images.sh
+```
+- Or run manually:
+```shell
+cd accounts
+mvn compile jib:dockerBuild
+cd ../cards
+mvn compile jib:dockerBuild
+cd ../configserver
+mvn compile jib:dockerBuild
 ```
 
