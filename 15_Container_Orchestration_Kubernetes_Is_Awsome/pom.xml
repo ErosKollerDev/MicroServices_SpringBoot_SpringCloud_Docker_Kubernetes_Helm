@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.eazybytes</groupId>
+    <artifactId>event-driven-kafka-parent</artifactId>
+    <version>s14</version>
+    <packaging>pom</packaging>
+    <name>Event Driven Kafka - Aggregator</name>
+    <description>Aggregator POM for building all microservices in 14_EventDriven_Kafka</description>
+
+    <modules>
+        <module>accounts</module>
+        <module>cards</module>
+        <module>configserver</module>
+        <module>eurekaserver</module>
+        <module>gatewayserver</module>
+        <module>loans</module>
+        <module>message</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
+    </properties>
+
+</project>

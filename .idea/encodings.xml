@@ -2,11 +2,12 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/accounts/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/cards/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/configserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/eurekaserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/gatewayserver/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/loans/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/14_EventDriven_Kafka/message/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/src/main/java" charset="UTF-8" />
   </component>
 </project>

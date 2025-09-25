@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/11_Observability_Monitoring" />
       <excludeFolder url="file://$MODULE_DIR$/12_OAuth2_keyCloak" />
       <excludeFolder url="file://$MODULE_DIR$/13_EventDriven_Kafka_RabbitMQ" />
+      <excludeFolder url="file://$MODULE_DIR$/14_EventDriven_Kafka" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

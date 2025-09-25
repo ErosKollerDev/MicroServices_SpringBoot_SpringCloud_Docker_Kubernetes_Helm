@@ -7,7 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaserver (1)" />
+        <module name="eurekaserver" />
+      </profile>
+      <profile name="Annotation profile for loans" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="configserver" />
+        <module name="cards" />
+        <module name="accounts" />
+        <module name="loans" />
       </profile>
       <profile name="Annotation profile for message" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,35 +28,23 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
-        <module name="gatewayserver (1)" />
-        <module name="message (1)" />
-      </profile>
-      <profile name="Annotation profile for accounts" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
-        </processorPath>
-        <module name="configserver (1)" />
-        <module name="cards (1)" />
-        <module name="loans (1)" />
-        <module name="accounts (1)" />
+        <module name="message" />
+        <module name="gatewayserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="accounts" target="21" />
+      <module name="accounts (1)" target="21" />
       <module name="accounts-11" target="21" />
-      <module name="cards" target="21" />
+      <module name="cards (1)" target="21" />
       <module name="cards-11" target="21" />
-      <module name="configserver" target="21" />
-      <module name="eurekaserver" target="21" />
+      <module name="configserver (1)" target="21" />
+      <module name="eurekaserver (1)" target="21" />
       <module name="eurekaserver-11" target="21" />
-      <module name="gatewayserver" target="21" />
+      <module name="gatewayserver (1)" target="21" />
       <module name="gatewayserver-11" target="21" />
-      <module name="loans" target="21" />
+      <module name="loans (1)" target="21" />
       <module name="loans-11" target="21" />
-      <module name="message" target="21" />
+      <module name="message (1)" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

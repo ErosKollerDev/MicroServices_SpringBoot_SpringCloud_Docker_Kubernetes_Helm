@@ -4,13 +4,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/accounts/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/cards/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/configserver/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/eurekaserver/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/gatewayserver/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/loans/pom.xml" />
-        <option value="$PROJECT_DIR$/14_EventDriven_Kafka/message/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/pom.xml" />
+        <option value="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/pom.xml" />
       </list>
     </option>
   </component>
