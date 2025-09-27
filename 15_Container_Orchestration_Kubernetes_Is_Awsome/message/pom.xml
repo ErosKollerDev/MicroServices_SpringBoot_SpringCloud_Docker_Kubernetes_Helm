@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>message</artifactId>
-    <version>s13</version>
+    <version>s15.5</version>
     <name>message</name>
     <description>Microservice to support messaging in EazyBank</description>
     <url/>

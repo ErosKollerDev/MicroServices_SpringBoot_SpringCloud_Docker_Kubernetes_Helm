@@ -11,7 +11,7 @@
     <groupId>com.eazybytes</groupId>
     <artifactId>cards</artifactId>
     <name>cards</name>
-    <version>s13</version>
+    <version>s15.5</version>
 
     <packaging>jar</packaging>
     <description>MicroService 4 Cards</description>

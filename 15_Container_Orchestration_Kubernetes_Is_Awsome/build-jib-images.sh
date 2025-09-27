@@ -8,21 +8,24 @@ ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 build_service() {
   local service_dir="$1"
+  local VERSION="$2";
   echo "============================================================"
   echo "Building Jib image for: ${service_dir}"
   echo "============================================================"
-  (cd "${ROOT_DIR}/${service_dir}" && mvn versions:set -DnewVersion=s14.1 -DgenerateBackupPoms=false && mvn -q -DskipTests compile jib:dockerBuild)
+  (cd "${ROOT_DIR}/${service_dir}" && mvn versions:set -DnewVersion=${VERSION} -DgenerateBackupPoms=false && mvn -q -DskipTests compile jib:dockerBuild)
 }
 
 # Correct order for config dependencies (configserver first is optional for image build,
 # but building accounts/cards does not require running services)
 
-build_service accounts
-build_service cards
-build_service configserver
-build_service eurekaserver
-build_service gatewayserver
-build_service loans
-build_service message
+
+VERSION="s15.5"
+build_service accounts "${VERSION}"
+build_service cards "${VERSION}"
+build_service configserver "${VERSION}"
+build_service eurekaserver "${VERSION}"
+build_service gatewayserver "${VERSION}"
+build_service loans "${VERSION}"
+build_service message "${VERSION}"
 
 echo "All images built successfully."

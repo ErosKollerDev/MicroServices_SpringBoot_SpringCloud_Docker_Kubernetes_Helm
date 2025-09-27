@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: eazybank-configmap
+data:
+  SPRING_PROFILES_ACTIVE: default
+  SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+  EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: "http://eurekaserver:8070/eureka/"
+  CONFIGSERVER_APPLICATION_NAME: configserver
+  EUREKA_APPLICATION_NAME: eurekaserver
+  ACCOUNTS_APPLICATION_NAME: accounts
+  LOANS_APPLICATION_NAME: loans
+  CARDS_APPLICATION_NAME: cards
+  GATEWAY_APPLICATION_NAME: gatewayserver
+  MESSAGE_APPLICATION_NAME: message
+  KEYCLOAK_ADMIN: admin
+  KEYCLOAK_ADMIN_PASSWORD: admin
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  SPRING_RABBITMQ_HOST: "rabbit"
+  SPRING_DATA_REDIS_HOST: "redis"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://192.168.0.45:5432/eazybank"
+  SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: "http://keycloak:7080/realms/master/protocol/openid-connect/certs"

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>eurekaserver</artifactId>
-    <version>s13</version>
+    <version>s15.5</version>
     <name>eurekaserver</name>
     <description>Service Discovery Agent for Eazy Bank Microservices</description>
     <url/>

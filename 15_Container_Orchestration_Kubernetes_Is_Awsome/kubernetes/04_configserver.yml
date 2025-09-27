@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: configserver-deployment
+  labels:
+    app: configserver
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: configserver
+  template:
+    metadata:
+      labels:
+        app: configserver
+    spec:
+      containers:
+        - name: configserver
+          image: eroskoller/configserver:s15.5
+          ports:
+            - containerPort: 8071
+          env:
+            - name: SPRING_APPLICATION_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: eazybank-configmap
+                  key: CONFIGSERVER_APPLICATION_NAME
+
+            - name: SPRING_RABBITMQ_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: eazybank-configmap
+                  key: SPRING_RABBITMQ_HOST
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: configserver
+spec:
+  selector:
+    app: configserver
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 8071
+      targetPort: 8071
+
+#              kubectl expose deployment configserver-deployment --type=NodePort --name=expose-configserver-deployment-service-v2
+#      kubectl expose deployment configserver-deployment --type=NodePort --port=8071 --target-port=8071
+#  kubectl expose deployment configserver-deployment --type=NodePort --name=configserver-deployment-service
+#  kind create cluster --name my-cluster --image kindest/node:v1.27.3
