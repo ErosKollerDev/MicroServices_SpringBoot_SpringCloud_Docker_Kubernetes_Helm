@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/00_redis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/01_rabbitmq.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/02_configmaps.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/03_keycloak.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/04_configserver.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/05_eurekaserver.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/06_accounts.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/07_loans.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/08_cards.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/09_gateway.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/10_message.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/kind-config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/metallb_00_install.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/metallb_02_test_load_balancer.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/metallb_03_my_service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/ubuntu.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/build-jib-images.sh" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/build-jib-images.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/build-jib-images.sh" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/bash-build-jib-images.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/03_keycloak.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/03_keycloak.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/10_message.yml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes/10_message.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +55,10 @@
   ],
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="KubernetesSettings">
+    <option name="contextConfigFilePath" value="file://$USER_HOME$/.kube/config" />
+    <option name="contextName" value="kind-dev" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -218,6 +199,7 @@
       <recent name="$PROJECT_DIR$/07_section/configserver/src/main/resources/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome" />
       <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/default" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -467,7 +449,8 @@
       <workItem from="1758990439021" duration="2081000" />
       <workItem from="1758993989988" duration="5272000" />
       <workItem from="1759002249047" duration="4659000" />
-      <workItem from="1759006955786" duration="13000" />
+      <workItem from="1759006955786" duration="66000" />
+      <workItem from="1759060539291" duration="6043000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />

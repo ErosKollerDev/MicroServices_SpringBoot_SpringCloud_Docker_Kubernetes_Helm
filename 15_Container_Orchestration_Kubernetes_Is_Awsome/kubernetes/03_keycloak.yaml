@@ -32,6 +32,14 @@ spec:
                 configMapKeyRef:
                   name: eazybank-configmap
                   key: KEYCLOAK_ADMIN_PASSWORD
+            - name: KC_DB
+              value: "postgres"
+            - name: KC_DB_URL
+              value: "jdbc:postgresql://192.168.0.45:5432/keycloak"
+            - name: KC_DB_USERNAME
+              value: "postgres"
+            - name: KC_DB_PASSWORD
+              value: "postgres"
           ports:
             - name: http
               containerPort: 8080
