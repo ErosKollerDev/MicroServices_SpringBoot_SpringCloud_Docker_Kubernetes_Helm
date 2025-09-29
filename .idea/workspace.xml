@@ -196,6 +196,7 @@
       <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/prod" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes_config" />
       <recent name="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome" />
       <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/default" />
     </key>
@@ -454,7 +455,7 @@
       <workItem from="1759151559429" duration="1908000" />
       <workItem from="1759160161591" duration="1743000" />
       <workItem from="1759165895231" duration="3720000" />
-      <workItem from="1759172194473" duration="452000" />
+      <workItem from="1759172194473" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
