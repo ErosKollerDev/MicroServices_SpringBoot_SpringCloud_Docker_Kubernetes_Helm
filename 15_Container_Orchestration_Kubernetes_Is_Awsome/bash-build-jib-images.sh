@@ -12,14 +12,19 @@ build_service() {
   echo "============================================================"
   echo "Building Jib image for: ${service_dir}"
   echo "============================================================"
-  (cd "${ROOT_DIR}/${service_dir}" && mvn versions:set -DnewVersion=${VERSION} -DgenerateBackupPoms=false && mvn -q -DskipTests compile jib:dockerBuild)
+  (
+       cd "${ROOT_DIR}/${service_dir}" &&
+       mvn versions:set -DnewVersion=${VERSION} -DgenerateBackupPoms=false &&
+       mvn -q -DskipTests compile jib:dockerBuild &&
+       docker push docker.io/eroskoller/${service_dir}:${VERSION}
+   )
 }
 
 # Correct order for config dependencies (configserver first is optional for image build,
 # but building accounts/cards does not require running services)
 
 
-VERSION="s15.5"
+VERSION="s15.6"
 build_service accounts "${VERSION}"
 build_service cards "${VERSION}"
 build_service configserver "${VERSION}"

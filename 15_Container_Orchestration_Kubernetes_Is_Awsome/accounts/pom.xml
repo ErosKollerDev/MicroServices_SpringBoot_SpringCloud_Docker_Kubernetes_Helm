@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.eazybytes</groupId>
     <artifactId>accounts</artifactId>
-    <version>s15.5</version>
+    <version>s15.6</version>
 
     <packaging>jar</packaging>
     <name>accounts</name>

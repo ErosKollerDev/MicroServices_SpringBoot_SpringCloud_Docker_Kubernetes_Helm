@@ -11,7 +11,7 @@
     <groupId>com.eazybytes</groupId>
     <artifactId>loans</artifactId>
     <name>loans</name>
-    <version>s15.5</version>
+    <version>s15.6</version>
 
     <packaging>jar</packaging>
     <description>MicroService 4 Loans</description>
