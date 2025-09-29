@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c16012bd-4dca-4af5-b19e-d7198b63292d" name="Changes" comment="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/bash-build-jib-images.sh" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/bash-build-jib-images.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/configserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/eurekaserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/gatewayserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/loans/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/message/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,130 +70,130 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.default/docker-compose.yaml.kafka: Compose Deployment.executor": "Run",
-    "Docker.default/docker-compose.yaml: Compose Deployment.executor": "Run",
-    "Maven. [spring-boot:build-image].executor": "Run",
-    "Maven.accounts [clean].executor": "Run",
-    "Maven.accounts [compile].executor": "Run",
-    "Maven.accounts [install].executor": "Run",
-    "Maven.cards [clean].executor": "Run",
-    "Maven.cards [install].executor": "Run",
-    "Maven.configserver [clean].executor": "Run",
-    "Maven.configserver [install].executor": "Run",
-    "Maven.gatewayserver [clean].executor": "Run",
-    "Maven.gatewayserver [compile].executor": "Run",
-    "Maven.gatewayserver [install].executor": "Run",
-    "Maven.gatewayserver-11 [clean].executor": "Run",
-    "Maven.gatewayserver-11 [compile].executor": "Run",
-    "Maven.gatewayserver-11 [install].executor": "Run",
-    "Maven.loans [clean].executor": "Run",
-    "Maven.loans [install].executor": "Run",
-    "Maven.message [clean].executor": "Run",
-    "Maven.message [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
-    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SHELLCHECK.PATH": "/home/eros/.local/share/JetBrains/IntelliJIdea2025.2/Shell Script/shellcheck",
-    "Spring Boot.02_AccountsApplication.executor": "Run",
-    "Spring Boot.02_CardsApplication.executor": "Run",
-    "Spring Boot.04_AccountsApplication.executor": "Run",
-    "Spring Boot.04_CardsApplication.executor": "Run",
-    "Spring Boot.04_LoansApplication.executor": "Run",
-    "Spring Boot.06_AccountsApplication.executor": "Debug",
-    "Spring Boot.06_CardsApplication.executor": "Debug",
-    "Spring Boot.06_LoansApplication.executor": "Debug",
-    "Spring Boot.07_AccountsApplication.executor": "Run",
-    "Spring Boot.07_CardsApplication.executor": "Run",
-    "Spring Boot.07_ConfigserverApplication.executor": "Run",
-    "Spring Boot.07_LoansApplication.executor": "Run",
-    "Spring Boot.08_AccountsApplication.executor": "Run",
-    "Spring Boot.08_AccountsApplication_Eureka.executor": "Run",
-    "Spring Boot.08_CardsApplication.executor": "Run",
-    "Spring Boot.08_CardsApplication_Eureka.executor": "Debug",
-    "Spring Boot.08_ConfigserverApplication.executor": "Run",
-    "Spring Boot.08_ConfigserverApplication_Eureka.executor": "Run",
-    "Spring Boot.08_EurekaserverApplication.executor": "Run",
-    "Spring Boot.08_LoansApplication.executor": "Run",
-    "Spring Boot.08_LoansApplication_Eureka.executor": "Debug",
-    "Spring Boot.09_AccountsApplication.executor": "Run",
-    "Spring Boot.09_CardsApplication.executor": "Run",
-    "Spring Boot.09_ConfigserverApplication.executor": "Run",
-    "Spring Boot.09_EurekaserverApplication.executor": "Run",
-    "Spring Boot.09_GatewayserverApplication.executor": "Run",
-    "Spring Boot.09_LoansApplication.executor": "Run",
-    "Spring Boot.10_AccountsApplication.executor": "Run",
-    "Spring Boot.10_CardsApplication.executor": "Run",
-    "Spring Boot.10_ConfigserverApplication.executor": "Run",
-    "Spring Boot.10_EurekaserverApplication.executor": "Run",
-    "Spring Boot.10_GatewayserverApplication.executor": "Run",
-    "Spring Boot.10_LoansApplication.executor": "Debug",
-    "Spring Boot.11_AccountsApplication.executor": "Run",
-    "Spring Boot.11_CardsApplication.executor": "Run",
-    "Spring Boot.11_ConfigserverApplication.executor": "Run",
-    "Spring Boot.11_EurekaserverApplication.executor": "Run",
-    "Spring Boot.11_GatewayserverApplication.executor": "Run",
-    "Spring Boot.11_LoansApplication.executor": "Run",
-    "Spring Boot.12_AccountsApplication.executor": "Run",
-    "Spring Boot.12_CardsApplication.executor": "Run",
-    "Spring Boot.12_ConfigserverApplication.executor": "Run",
-    "Spring Boot.12_EurekaserverApplication.executor": "Run",
-    "Spring Boot.12_GatewayserverApplication.executor": "Debug",
-    "Spring Boot.12_LoansApplication.executor": "Run",
-    "Spring Boot.13_AccountsApplication.executor": "Debug",
-    "Spring Boot.13_CardsApplication.executor": "Run",
-    "Spring Boot.13_ConfigserverApplication.executor": "Run",
-    "Spring Boot.13_EurekaserverApplication.executor": "Run",
-    "Spring Boot.13_GatewayserverApplication.executor": "Run",
-    "Spring Boot.13_MessageApplication.executor": "Run",
-    "Spring Boot.14_AccountsApplication.executor": "Run",
-    "Spring Boot.14_EurekaserverApplication.executor": "Run",
-    "Spring Boot.14_GatewayserverApplication.executor": "Run",
-    "Spring Boot.14_MessageApplication.executor": "Debug",
-    "Spring Boot.AccountsApplication (1).executor": "Run",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Run",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "Spring Boot.LoansApplication.executor": "Run",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "ignore.preview.features.used": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.106770836",
-    "project.structure.side.proportion": "0.18261378",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.31723675",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.default/docker-compose.yaml.kafka: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.default/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [spring-boot:build-image].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.accounts [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cards [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cards [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.configserver [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.configserver [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver-11 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver-11 [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gatewayserver-11 [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.loans [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.loans [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.message [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.message [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;New/updated database configurations found&quot;,
+    &quot;Notification.DoNotAsk-DatabaseConfigFileWatcher.found&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;/home/eros/.local/share/JetBrains/IntelliJIdea2025.2/Shell Script/shellcheck&quot;,
+    &quot;Spring Boot.02_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.02_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.04_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.04_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.04_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.06_AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.06_CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.06_LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.07_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.07_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.07_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.07_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_AccountsApplication_Eureka.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_CardsApplication_Eureka.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.08_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_ConfigserverApplication_Eureka.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.08_LoansApplication_Eureka.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.09_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.09_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.09_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.09_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.09_GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.09_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.10_LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.11_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.11_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.11_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.11_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.11_GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.11_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.12_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.12_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.12_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.12_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.12_GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.12_LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.13_AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.13_CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.13_ConfigserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.13_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.13_GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.13_MessageApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.14_AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.14_EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.14_GatewayserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.14_MessageApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.AccountsApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/eros/Projects/Learning/SpringBoot/MicroServices_SpringBoot_SpringCloud_Docker_Kubernetes_Helm/16_helm/helm/eazybank-common/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.106770836&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.18261378&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.31723675&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/16_helm/helm/eazybank-common/templates" />
       <recent name="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome/kubernetes" />
       <recent name="$PROJECT_DIR$/11_Observability_Monitoring/docker-compose-microservices" />
       <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/qa" />
       <recent name="$PROJECT_DIR$/07_section/docker-compose-microservices/prod" />
-      <recent name="$PROJECT_DIR$/07_section/configserver/src/main/resources/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/15_Container_Orchestration_Kubernetes_Is_Awsome" />
@@ -461,7 +452,9 @@
       <workItem from="1759081681935" duration="15000" />
       <workItem from="1759145306695" duration="2315000" />
       <workItem from="1759151559429" duration="1908000" />
-      <workItem from="1759160161591" duration="1038000" />
+      <workItem from="1759160161591" duration="1743000" />
+      <workItem from="1759165895231" duration="3720000" />
+      <workItem from="1759172194473" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="Building Cads &amp; Loans &#10;&#10;Exception&#10;Dtos&#10;Services&#10;Repositories&#10;Audit&#10;Controllers">
       <option name="closed" value="true" />
